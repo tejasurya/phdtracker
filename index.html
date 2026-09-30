@@ -285,7 +285,7 @@ function normScholarship(s){
 }
 function normLab(l){
   return {kind:"lab", id:l.id, title:l.lab_group, org:l.university || "", country:l.country || "", region:regionOf(l.country),
-    areas:l.areas || [], url:l.link, intake:l.typical_intake || "", snippet:l.notes || "", origin:"excel"};
+    areas:l.areas || [], url:l.link, intake:l.typical_intake || "", snippet:l.notes || "", professors:l.professors || [], origin:"excel"};
 }
 function normProf(p){
   return {kind:"prof", id:p.id, title:p.name, org:[p.department_lab, p.university].filter(Boolean).join(", "), univ:p.university || "",
@@ -355,7 +355,7 @@ function matches(item, skipKey){
     if (state.win.deadline === "none" ? u !== null : u !== state.win.deadline) return false;
   }
   if (state.q){
-    const blob = [item.title, item.org, item.country, item.region, item.snippet, item.source, item.field, ...(item.areas || [])].join(" ").toLowerCase();
+    const blob = [item.title, item.org, item.country, item.region, item.snippet, item.source, item.field, ...(item.areas || []), ...(item.professors || [])].join(" ").toLowerCase();
     if (!state.q.toLowerCase().split(/\s+/).filter(Boolean).every(t => blob.includes(t))) return false;
   }
   return true;
@@ -490,7 +490,7 @@ function cardLab(i){
   return `<article class="card" data-id="${esc(i.id)}">
     <div class="c-top">${ccBadge(i.country)}
       <div class="c-main"><h3 class="c-title">${esc(i.title)}</h3><div class="c-org">${esc(i.org)}${i.country ? " · " + esc(i.country) : ""}</div></div></div>
-    <div class="facts">${i.intake ? `<span><span class="k">Intake</span> ${esc(i.intake)}</span>` : ""}</div>
+    <div class="facts">${i.professors && i.professors.length ? `<span><span class="k">Professor${i.professors.length > 1 ? "s" : ""}</span> ${esc(i.professors.join(", "))}</span>` : ""}${i.intake ? `<span><span class="k">Intake</span> ${esc(i.intake)}</span>` : ""}</div>
     ${i.snippet ? `<p class="snip">${esc(i.snippet)}</p>` : ""}
     ${tagList(i.areas)}
     <div class="actions">${url ? `<a class="btn primary" href="${esc(url)}" target="_blank" rel="noopener">Website</a>` : ""}

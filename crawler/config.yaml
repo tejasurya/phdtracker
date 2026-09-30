@@ -20,6 +20,8 @@ queries:
   - "3D computer vision"
   - "geospatial"
   - "geodesy"
+  - "environmental remote sensing"
+  - "deep learning photogrammetry"
 
 # Canonical research areas. Names MUST match the "Research Areas" values used in Excel.
 # terms: any match tags the area. context_required: if given, at least one of these must
@@ -47,6 +49,9 @@ research_areas:
     terms: ["least squares", "least-squares", "adjustment theory", "adjustment computation", geodesy, geodetic, "sensor fusion", "kalman filter", gnss, "estimation theory", "error propagation"]
   "Remote Sensing":
     terms: ["remote sensing", "earth observation", satellite, hyperspectral, multispectral, "synthetic aperture radar", sar, insar, sentinel, landsat, "aerial imagery", uav, drone]
+  "Environmental Remote Sensing":
+    terms: ["environmental monitoring", "land cover", "land use", ecosystem, biodiversity, climate, hydrology, "carbon flux", "vegetation mapping", wildfire, "natural resource"]
+    context_required: [remote sensing, "earth observation", satellite, lidar, uav, drone, "point cloud", geospatial]
 
 position_keywords: [phd, "ph.d", doctoral, doctorate, "doctoral candidate", "doctoral researcher", studentship, "fully funded", "phd student", "phd position", "phd scholarship", "graduate research assistant"]
 postdoc_keywords: [postdoc, "post-doc", postdoctoral, "research fellow"]

@@ -11,6 +11,9 @@
    "LiDAR Mapping",
    "Photogrammetry"
   ],
+  "professors": [
+   "Cyrill Stachniss"
+  ],
   "id": "l-f72ef49f80"
  },
  {
@@ -25,6 +28,9 @@
    "GeoAI / Deep Learning",
    "Computer Vision (2D/3D)"
   ],
+  "professors": [
+   "Konrad Schindler"
+  ],
   "id": "l-d4e618859b"
  },
  {
@@ -37,6 +43,9 @@
   "areas": [
    "Photogrammetry",
    "LiDAR Mapping"
+  ],
+  "professors": [
+   "Norbert Haala"
   ],
   "id": "l-f61451b33a"
  },
@@ -51,6 +60,9 @@
    "GeoAI / Deep Learning",
    "Remote Sensing"
   ],
+  "professors": [
+   "Xiaoxiang Zhu"
+  ],
   "id": "l-1e67d2583a"
  },
  {
@@ -64,6 +76,10 @@
    "Photogrammetry",
    "LiDAR Mapping",
    "Computer Vision (2D/3D)"
+  ],
+  "professors": [
+   "Christian Heipke",
+   "Franz Rottensteiner"
   ],
   "id": "l-d44a2f1e77"
  },
@@ -105,6 +121,9 @@
    "LiDAR Mapping",
    "Forest LiDAR"
   ],
+  "professors": [
+   "Norbert Pfeifer"
+  ],
   "id": "l-07c78173cc"
  },
  {
@@ -131,6 +150,9 @@
    "Forest LiDAR",
    "LiDAR Mapping"
   ],
+  "professors": [
+   "Juha Hyyppä"
+  ],
   "id": "l-834969395f"
  },
  {
@@ -143,6 +165,9 @@
   "areas": [
    "Photogrammetry",
    "LiDAR Mapping"
+  ],
+  "professors": [
+   "Ayman Habib"
   ],
   "id": "l-71c8b79cbe"
  },
@@ -184,6 +209,9 @@
    "LiDAR Mapping",
    "SLAM"
   ],
+  "professors": [
+   "Naser El-Sheimy"
+  ],
   "id": "l-4a8043f028"
  },
  {
@@ -224,6 +252,10 @@
    "LiDAR Mapping",
    "Remote Sensing"
   ],
+  "professors": [
+   "Liangpei Zhang",
+   "Deren Li"
+  ],
   "id": "l-a2b2f88a63"
  },
  {
@@ -250,6 +282,9 @@
    "Photogrammetry",
    "LiDAR Mapping",
    "Adjustment & Geodesy"
+  ],
+  "professors": [
+   "Bo Wu"
   ],
   "id": "l-925bea894a"
  },
@@ -292,5 +327,542 @@
    "Remote Sensing"
   ],
   "id": "l-03ba23495d"
+ },
+ {
+  "lab_group": "Autonomous Vision Group",
+  "university": "University of Tübingen",
+  "country": "Germany",
+  "link": "https://uni-tuebingen.de",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Computer Vision (2D/3D)",
+   "SLAM",
+   "GeoAI / Deep Learning"
+  ],
+  "professors": [
+   "Andreas Geiger"
+  ],
+  "id": "l-b2b1ac5f77"
+ },
+ {
+  "lab_group": "Computer Vision Group",
+  "university": "Technical University of Munich",
+  "country": "Germany",
+  "link": "https://www.tum.de",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Computer Vision (2D/3D)",
+   "SLAM"
+  ],
+  "professors": [
+   "Daniel Cremers"
+  ],
+  "id": "l-c3fb5b6647"
+ },
+ {
+  "lab_group": "Computer Vision and Geometry Group",
+  "university": "ETH Zurich",
+  "country": "Switzerland",
+  "link": "https://ethz.ch",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Computer Vision (2D/3D)",
+   "SLAM",
+   "Photogrammetry"
+  ],
+  "professors": [
+   "Marc Pollefeys"
+  ],
+  "id": "l-e0944764d8"
+ },
+ {
+  "lab_group": "Robotics and Perception Group",
+  "university": "University of Zurich",
+  "country": "Switzerland",
+  "link": "https://www.uzh.ch",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "SLAM",
+   "Computer Vision (2D/3D)"
+  ],
+  "professors": [
+   "Davide Scaramuzza"
+  ],
+  "id": "l-0426ba5442"
+ },
+ {
+  "lab_group": "Autonomous Systems Lab",
+  "university": "ETH Zurich",
+  "country": "Switzerland",
+  "link": "https://ethz.ch",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "SLAM",
+   "LiDAR Mapping"
+  ],
+  "professors": [
+   "Roland Siegwart"
+  ],
+  "id": "l-38b23b02d7"
+ },
+ {
+  "lab_group": "Dyson Robotics Lab",
+  "university": "Imperial College London",
+  "country": "United Kingdom",
+  "link": "https://www.imperial.ac.uk",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "SLAM",
+   "Computer Vision (2D/3D)"
+  ],
+  "professors": [
+   "Andrew Davison"
+  ],
+  "id": "l-f81de6c723"
+ },
+ {
+  "lab_group": "Smart Robotics Lab",
+  "university": "Technical University of Munich",
+  "country": "Germany",
+  "link": "https://www.tum.de",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "SLAM",
+   "Computer Vision (2D/3D)"
+  ],
+  "professors": [
+   "Stefan Leutenegger"
+  ],
+  "id": "l-a17b058d7d"
+ },
+ {
+  "lab_group": "Air Lab",
+  "university": "Carnegie Mellon University",
+  "country": "USA",
+  "link": "https://www.cmu.edu",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "SLAM",
+   "LiDAR Mapping"
+  ],
+  "professors": [
+   "Sebastian Scherer"
+  ],
+  "id": "l-c354c5d0bb"
+ },
+ {
+  "lab_group": "Robot Perception Lab",
+  "university": "Carnegie Mellon University",
+  "country": "USA",
+  "link": "https://www.cmu.edu",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "SLAM",
+   "Computer Vision (2D/3D)"
+  ],
+  "professors": [
+   "Michael Kaess"
+  ],
+  "id": "l-e57b3d788d"
+ },
+ {
+  "lab_group": "Borglab",
+  "university": "Georgia Institute of Technology",
+  "country": "USA",
+  "link": "https://www.gatech.edu",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "SLAM",
+   "Computer Vision (2D/3D)"
+  ],
+  "professors": [
+   "Frank Dellaert"
+  ],
+  "id": "l-20774dc076"
+ },
+ {
+  "lab_group": "Chair of Photogrammetry and Remote Sensing",
+  "university": "Technical University of Munich",
+  "country": "Germany",
+  "link": "https://www.tum.de",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Photogrammetry",
+   "Computer Vision (2D/3D)"
+  ],
+  "professors": [
+   "Uwe Stilla"
+  ],
+  "id": "l-8314556cba"
+ },
+ {
+  "lab_group": "3D Geospatial Data Processing Group (3DGeo)",
+  "university": "Heidelberg University",
+  "country": "Germany",
+  "link": "https://www.uni-heidelberg.de",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "LiDAR Mapping",
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "professors": [
+   "Bernhard Höfle"
+  ],
+  "id": "l-6ed97ebc1f"
+ },
+ {
+  "lab_group": "Remote Sensing Image Analysis Group",
+  "university": "Karlsruhe Institute of Technology",
+  "country": "Germany",
+  "link": "https://www.kit.edu",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping",
+   "GeoAI / Deep Learning"
+  ],
+  "professors": [
+   "Stefan Hinz"
+  ],
+  "id": "l-69ac72454f"
+ },
+ {
+  "lab_group": "Institute of Photogrammetry and Remote Sensing (IPF)",
+  "university": "Karlsruhe Institute of Technology",
+  "country": "Germany",
+  "link": "https://www.kit.edu",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "LiDAR Mapping",
+   "Computer Vision (2D/3D)",
+   "Photogrammetry"
+  ],
+  "professors": [
+   "Boris Jutzi",
+   "Martin Weinmann"
+  ],
+  "id": "l-7ee051857d"
+ },
+ {
+  "lab_group": "Institute of Cartography and Geoinformatics",
+  "university": "Leibniz University Hannover",
+  "country": "Germany",
+  "link": "https://www.uni-hannover.de",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "GeoAI / Deep Learning",
+   "LiDAR Mapping"
+  ],
+  "professors": [
+   "Monika Sester"
+  ],
+  "id": "l-48aa57abda"
+ },
+ {
+  "lab_group": "EcoVision Lab",
+  "university": "University of Zurich",
+  "country": "Switzerland",
+  "link": "https://www.uzh.ch",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning",
+   "Forest LiDAR"
+  ],
+  "professors": [
+   "Jan Dirk Wegner"
+  ],
+  "id": "l-b31ee3f34f"
+ },
+ {
+  "lab_group": "Environmental Computational Science and Earth Observation Lab (ECEO)",
+  "university": "EPFL",
+  "country": "Switzerland",
+  "link": "https://www.epfl.ch",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "professors": [
+   "Devis Tuia"
+  ],
+  "id": "l-3a2b593b00"
+ },
+ {
+  "lab_group": "Image Processing Laboratory (IPL)",
+  "university": "University of Valencia",
+  "country": "Spain",
+  "link": "https://www.uv.es",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "professors": [
+   "Gustau Camps-Valls"
+  ],
+  "id": "l-f1d32173e9"
+ },
+ {
+  "lab_group": "Chair of Remote Sensing and Landscape Information Systems",
+  "university": "University of Freiburg",
+  "country": "Germany",
+  "link": "https://www.uni-freiburg.de",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Forest LiDAR",
+   "Environmental Remote Sensing"
+  ],
+  "professors": [
+   "Barbara Koch"
+  ],
+  "id": "l-603f58d267"
+ },
+ {
+  "lab_group": "Faculty of Environmental Sciences and Natural Resource Management",
+  "university": "Norwegian University of Life Sciences (NMBU)",
+  "country": "Norway",
+  "link": "https://www.nmbu.no",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Forest LiDAR",
+   "Environmental Remote Sensing"
+  ],
+  "professors": [
+   "Erik Næsset",
+   "Terje Gobakken"
+  ],
+  "id": "l-d3a0e01ed1"
+ },
+ {
+  "lab_group": "Department of Forest Sciences",
+  "university": "University of Helsinki",
+  "country": "Finland",
+  "link": "https://www.helsinki.fi",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Forest LiDAR",
+   "Environmental Remote Sensing"
+  ],
+  "professors": [
+   "Mikko Vastaranta"
+  ],
+  "id": "l-a5739cf3bc"
+ },
+ {
+  "lab_group": "Department of Biogeochemical Integration",
+  "university": "Max Planck Institute for Biogeochemistry",
+  "country": "Germany",
+  "link": "https://www.bgc-jena.mpg.de",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "professors": [
+   "Markus Reichstein"
+  ],
+  "id": "l-a8ff6444e2"
+ },
+ {
+  "lab_group": "Center for Geospatial Analytics",
+  "university": "North Carolina State University",
+  "country": "USA",
+  "link": "https://www.ncsu.edu",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "professors": [
+   "Ross Meentemeyer"
+  ],
+  "id": "l-a7dcf537d9"
+ },
+ {
+  "lab_group": "Institute of Geodesy",
+  "university": "University of Stuttgart",
+  "country": "Germany",
+  "link": "https://www.uni-stuttgart.de",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Adjustment & Geodesy"
+  ],
+  "professors": [
+   "Nico Sneeuw"
+  ],
+  "id": "l-ccd7b6dc69"
+ },
+ {
+  "lab_group": "Institute of Remote Sensing and Digital Earth (RADI)",
+  "university": "Chinese Academy of Sciences",
+  "country": "China",
+  "link": "https://www.cas.cn",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "professors": [
+   "Huadong Guo"
+  ],
+  "id": "l-f5f11f679e"
+ },
+ {
+  "lab_group": "School of Geospatial Engineering and Science",
+  "university": "Sun Yat-sen University",
+  "country": "China",
+  "link": "https://www.sysu.edu.cn",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Photogrammetry",
+   "Remote Sensing",
+   "LiDAR Mapping"
+  ],
+  "id": "l-fcd508a9a2"
+ },
+ {
+  "lab_group": "School of Geographic Sciences",
+  "university": "East China Normal University",
+  "country": "China",
+  "link": "https://www.ecnu.edu.cn",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "l-75b991adb3"
+ },
+ {
+  "lab_group": "Department of Geoinformatics",
+  "university": "University of Tokyo",
+  "country": "Japan",
+  "link": "https://www.u-tokyo.ac.jp",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "professors": [
+   "Ryosuke Shibasaki"
+  ],
+  "id": "l-bf83f88da6"
+ },
+ {
+  "lab_group": "Department of Infrastructure Engineering",
+  "university": "University of Melbourne",
+  "country": "Australia",
+  "link": "https://www.unimelb.edu.au",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "LiDAR Mapping",
+   "Remote Sensing"
+  ],
+  "id": "l-a99a0d24af"
+ },
+ {
+  "lab_group": "School of Civil and Environmental Engineering",
+  "university": "UNSW Sydney",
+  "country": "Australia",
+  "link": "https://www.unsw.edu.au",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Adjustment & Geodesy",
+   "Remote Sensing"
+  ],
+  "professors": [
+   "Linlin Ge"
+  ],
+  "id": "l-fccf2ab1d1"
+ },
+ {
+  "lab_group": "Digital Photogrammetry Research Group",
+  "university": "Purdue University",
+  "country": "USA",
+  "link": "https://www.purdue.edu",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping"
+  ],
+  "professors": [
+   "Jinha Jung"
+  ],
+  "id": "l-71c8b79cbe"
+ },
+ {
+  "lab_group": "Geospatial Data Analysis Lab",
+  "university": "University of Florida",
+  "country": "USA",
+  "link": "https://www.ufl.edu",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping"
+  ],
+  "professors": [
+   "Benjamin Wu"
+  ],
+  "id": "l-fbe17fba28"
+ },
+ {
+  "lab_group": "Spatial Sciences Institute",
+  "university": "University of Southern California",
+  "country": "USA",
+  "link": "https://sci.usc.edu",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "GeoAI / Deep Learning",
+   "Remote Sensing"
+  ],
+  "id": "l-82053adae9"
+ },
+ {
+  "lab_group": "Center for LiDAR Information Coordination and Knowledge (CLICK)",
+  "university": "NOAA Coastal Services Center",
+  "country": "USA",
+  "link": "https://coast.noaa.gov",
+  "typical_intake": "Check group page",
+  "notes": "Seed entry — verify current affiliation and links",
+  "areas": [
+   "LiDAR Mapping",
+   "Environmental Remote Sensing"
+  ],
+  "id": "l-543f3b9e92"
  }
 ]

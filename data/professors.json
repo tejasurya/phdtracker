@@ -85,5 +85,473 @@
    "LiDAR Mapping"
   ],
   "id": "p-7b12a8d299"
+ },
+ {
+  "name": "Christian Heipke",
+  "university": "Leibniz University Hannover",
+  "department_lab": "Institute of Photogrammetry and GeoInformation",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping",
+   "Computer Vision (2D/3D)"
+  ],
+  "id": "p-55785fcbd9"
+ },
+ {
+  "name": "Franz Rottensteiner",
+  "university": "Leibniz University Hannover",
+  "department_lab": "Institute of Photogrammetry and GeoInformation",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping",
+   "Computer Vision (2D/3D)"
+  ],
+  "id": "p-2b22a85eb8"
+ },
+ {
+  "name": "Juha Hyyppä",
+  "university": "National Land Survey of Finland",
+  "department_lab": "Finnish Geospatial Research Institute",
+  "country": "Finland",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Forest LiDAR",
+   "LiDAR Mapping"
+  ],
+  "id": "p-a1257270da"
+ },
+ {
+  "name": "Naser El-Sheimy",
+  "university": "University of Calgary",
+  "department_lab": "Geomatics Engineering",
+  "country": "Canada",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Adjustment & Geodesy",
+   "LiDAR Mapping",
+   "SLAM"
+  ],
+  "id": "p-ae1d66f40b"
+ },
+ {
+  "name": "Liangpei Zhang",
+  "university": "Wuhan University",
+  "department_lab": "LIESMARS (Surveying, Mapping & RS)",
+  "country": "China",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping",
+   "Remote Sensing"
+  ],
+  "id": "p-3b48873100"
+ },
+ {
+  "name": "Deren Li",
+  "university": "Wuhan University",
+  "department_lab": "LIESMARS (Surveying, Mapping & RS)",
+  "country": "China",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping",
+   "Remote Sensing"
+  ],
+  "id": "p-7c766cb96e"
+ },
+ {
+  "name": "Bo Wu",
+  "university": "Hong Kong Polytechnic University",
+  "department_lab": "Land Surveying & Geo-Informatics (LSGI)",
+  "country": "Hong Kong",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping",
+   "Adjustment & Geodesy"
+  ],
+  "id": "p-f06a7129b3"
+ },
+ {
+  "name": "Andreas Geiger",
+  "university": "University of Tübingen",
+  "department_lab": "Autonomous Vision Group",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Computer Vision (2D/3D)",
+   "SLAM",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "p-543c53c835"
+ },
+ {
+  "name": "Daniel Cremers",
+  "university": "Technical University of Munich",
+  "department_lab": "Computer Vision Group",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Computer Vision (2D/3D)",
+   "SLAM"
+  ],
+  "id": "p-710cdc7656"
+ },
+ {
+  "name": "Marc Pollefeys",
+  "university": "ETH Zurich",
+  "department_lab": "Computer Vision and Geometry Group",
+  "country": "Switzerland",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Computer Vision (2D/3D)",
+   "SLAM",
+   "Photogrammetry"
+  ],
+  "id": "p-e18ddbfa9a"
+ },
+ {
+  "name": "Davide Scaramuzza",
+  "university": "University of Zurich",
+  "department_lab": "Robotics and Perception Group",
+  "country": "Switzerland",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "SLAM",
+   "Computer Vision (2D/3D)"
+  ],
+  "id": "p-5e0649b47c"
+ },
+ {
+  "name": "Roland Siegwart",
+  "university": "ETH Zurich",
+  "department_lab": "Autonomous Systems Lab",
+  "country": "Switzerland",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "SLAM",
+   "LiDAR Mapping"
+  ],
+  "id": "p-88eb172e05"
+ },
+ {
+  "name": "Andrew Davison",
+  "university": "Imperial College London",
+  "department_lab": "Dyson Robotics Lab",
+  "country": "United Kingdom",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "SLAM",
+   "Computer Vision (2D/3D)"
+  ],
+  "id": "p-afb03afeb6"
+ },
+ {
+  "name": "Stefan Leutenegger",
+  "university": "Technical University of Munich",
+  "department_lab": "Smart Robotics Lab",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "SLAM",
+   "Computer Vision (2D/3D)"
+  ],
+  "id": "p-0971bad95f"
+ },
+ {
+  "name": "Sebastian Scherer",
+  "university": "Carnegie Mellon University",
+  "department_lab": "Air Lab",
+  "country": "USA",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "SLAM",
+   "LiDAR Mapping"
+  ],
+  "id": "p-06c7831f26"
+ },
+ {
+  "name": "Michael Kaess",
+  "university": "Carnegie Mellon University",
+  "department_lab": "Robot Perception Lab",
+  "country": "USA",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "SLAM",
+   "Computer Vision (2D/3D)"
+  ],
+  "id": "p-64314f93ab"
+ },
+ {
+  "name": "Frank Dellaert",
+  "university": "Georgia Institute of Technology",
+  "department_lab": "Borglab",
+  "country": "USA",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "SLAM",
+   "Computer Vision (2D/3D)"
+  ],
+  "id": "p-c805fc9e51"
+ },
+ {
+  "name": "Uwe Stilla",
+  "university": "Technical University of Munich",
+  "department_lab": "Chair of Photogrammetry and Remote Sensing",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "Computer Vision (2D/3D)"
+  ],
+  "id": "p-4c8c648fdc"
+ },
+ {
+  "name": "Bernhard Höfle",
+  "university": "Heidelberg University",
+  "department_lab": "3D Geospatial Data Processing Group (3DGeo)",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "LiDAR Mapping",
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "p-14e9502c5c"
+ },
+ {
+  "name": "Stefan Hinz",
+  "university": "Karlsruhe Institute of Technology",
+  "department_lab": "Remote Sensing Image Analysis Group",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "p-eae3b78541"
+ },
+ {
+  "name": "Boris Jutzi",
+  "university": "Karlsruhe Institute of Technology",
+  "department_lab": "Institute of Photogrammetry and Remote Sensing (IPF)",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "LiDAR Mapping",
+   "Computer Vision (2D/3D)",
+   "Photogrammetry"
+  ],
+  "id": "p-ae81444bfa"
+ },
+ {
+  "name": "Martin Weinmann",
+  "university": "Karlsruhe Institute of Technology",
+  "department_lab": "Institute of Photogrammetry and Remote Sensing (IPF)",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "LiDAR Mapping",
+   "Computer Vision (2D/3D)",
+   "Photogrammetry"
+  ],
+  "id": "p-5a52121be5"
+ },
+ {
+  "name": "Monika Sester",
+  "university": "Leibniz University Hannover",
+  "department_lab": "Institute of Cartography and Geoinformatics",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "GeoAI / Deep Learning",
+   "LiDAR Mapping"
+  ],
+  "id": "p-579089277e"
+ },
+ {
+  "name": "Jan Dirk Wegner",
+  "university": "University of Zurich",
+  "department_lab": "EcoVision Lab",
+  "country": "Switzerland",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning",
+   "Forest LiDAR"
+  ],
+  "id": "p-7920593773"
+ },
+ {
+  "name": "Devis Tuia",
+  "university": "EPFL",
+  "department_lab": "Environmental Computational Science and Earth Observation Lab (ECEO)",
+  "country": "Switzerland",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "p-92932407ef"
+ },
+ {
+  "name": "Gustau Camps-Valls",
+  "university": "University of Valencia",
+  "department_lab": "Image Processing Laboratory (IPL)",
+  "country": "Spain",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "p-c047321b9b"
+ },
+ {
+  "name": "Barbara Koch",
+  "university": "University of Freiburg",
+  "department_lab": "Chair of Remote Sensing and Landscape Information Systems",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Forest LiDAR",
+   "Environmental Remote Sensing"
+  ],
+  "id": "p-ce6a57a7d3"
+ },
+ {
+  "name": "Erik Næsset",
+  "university": "Norwegian University of Life Sciences (NMBU)",
+  "department_lab": "Faculty of Environmental Sciences and Natural Resource Management",
+  "country": "Norway",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Forest LiDAR",
+   "Environmental Remote Sensing"
+  ],
+  "id": "p-4ebd9a15cb"
+ },
+ {
+  "name": "Terje Gobakken",
+  "university": "Norwegian University of Life Sciences (NMBU)",
+  "department_lab": "Faculty of Environmental Sciences and Natural Resource Management",
+  "country": "Norway",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Forest LiDAR",
+   "Environmental Remote Sensing"
+  ],
+  "id": "p-d85204faa2"
+ },
+ {
+  "name": "Mikko Vastaranta",
+  "university": "University of Helsinki",
+  "department_lab": "Department of Forest Sciences",
+  "country": "Finland",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Forest LiDAR",
+   "Environmental Remote Sensing"
+  ],
+  "id": "p-cfdbd35860"
+ },
+ {
+  "name": "Markus Reichstein",
+  "university": "Max Planck Institute for Biogeochemistry",
+  "department_lab": "Department of Biogeochemical Integration",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "p-b37e6ae519"
+ },
+ {
+  "name": "Ross Meentemeyer",
+  "university": "North Carolina State University",
+  "department_lab": "Center for Geospatial Analytics",
+  "country": "USA",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Environmental Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "p-6e7a7f1e6d"
+ },
+ {
+  "name": "Nico Sneeuw",
+  "university": "University of Stuttgart",
+  "department_lab": "Institute of Geodesy",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Adjustment & Geodesy"
+  ],
+  "id": "p-3de9a619b0"
+ },
+ {
+  "name": "Huadong Guo",
+  "university": "Chinese Academy of Sciences",
+  "department_lab": "Institute of Remote Sensing and Digital Earth (RADI)",
+  "country": "China",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "p-39ab1bd444"
+ },
+ {
+  "name": "Ryosuke Shibasaki",
+  "university": "University of Tokyo",
+  "department_lab": "Department of Geoinformatics",
+  "country": "Japan",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "p-b2a922ca68"
+ },
+ {
+  "name": "Linlin Ge",
+  "university": "UNSW Sydney",
+  "department_lab": "School of Civil and Environmental Engineering",
+  "country": "Australia",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Adjustment & Geodesy",
+   "Remote Sensing"
+  ],
+  "id": "p-ee024c89af"
+ },
+ {
+  "name": "Jinha Jung",
+  "university": "Purdue University",
+  "department_lab": "Digital Photogrammetry Research Group",
+  "country": "USA",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping"
+  ],
+  "id": "p-46d44c4c96"
+ },
+ {
+  "name": "Benjamin Wu",
+  "university": "University of Florida",
+  "department_lab": "Geospatial Data Analysis Lab",
+  "country": "USA",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping"
+  ],
+  "id": "p-c068141b5d"
  }
 ]

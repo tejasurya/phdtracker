@@ -69,6 +69,8 @@ def main():
             rec = {k: v for k, v in rec.items() if v not in (None, "")}
             if "research_areas" in rec:
                 rec["areas"] = split_areas(rec.pop("research_areas"))
+            if "professors" in rec:
+                rec["professors"] = split_areas(rec.pop("professors"))
             ident = f"{sheet}|{rec.get(required)}|{rec.get('link', '')}|{rec.get('university', rec.get('institution', ''))}"
             rec["id"] = sheet[0].lower() + "-" + hashlib.sha1(ident.encode()).hexdigest()[:10]
             records.append(rec)
