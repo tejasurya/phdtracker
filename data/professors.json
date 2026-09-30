@@ -1,0 +1,89 @@
+[
+ {
+  "name": "Cyrill Stachniss",
+  "university": "University of Bonn",
+  "department_lab": "Photogrammetry & Robotics Lab",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "SLAM",
+   "LiDAR Mapping",
+   "Photogrammetry"
+  ],
+  "id": "p-1f0dedddc4"
+ },
+ {
+  "name": "Konrad Schindler",
+  "university": "ETH Zurich",
+  "department_lab": "Photogrammetry and Remote Sensing",
+  "country": "Switzerland",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "Computer Vision (2D/3D)",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "p-b15b5719aa"
+ },
+ {
+  "name": "Norbert Pfeifer",
+  "university": "TU Wien",
+  "department_lab": "Photogrammetry / Geodesy & Geoinformation",
+  "country": "Austria",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "LiDAR Mapping",
+   "Forest LiDAR"
+  ],
+  "id": "p-ab05f0efa6"
+ },
+ {
+  "name": "Juha Hyyppä",
+  "university": "Finnish Geospatial Research Institute (FGI)",
+  "department_lab": "Remote Sensing & Photogrammetry",
+  "country": "Finland",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Forest LiDAR",
+   "LiDAR Mapping"
+  ],
+  "id": "p-391bbd1738"
+ },
+ {
+  "name": "Ayman Habib",
+  "university": "Purdue University",
+  "department_lab": "Digital Photogrammetry Research Group",
+  "country": "USA",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping",
+   "Adjustment & Geodesy"
+  ],
+  "id": "p-24fb764770"
+ },
+ {
+  "name": "Xiaoxiang Zhu",
+  "university": "Technical University of Munich",
+  "department_lab": "Data Science in Earth Observation",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "GeoAI / Deep Learning",
+   "Remote Sensing"
+  ],
+  "id": "p-829d1bde9e"
+ },
+ {
+  "name": "Norbert Haala",
+  "university": "University of Stuttgart",
+  "department_lab": "Institute for Photogrammetry and Geoinformatics",
+  "country": "Germany",
+  "notes": "Seed entry — verify current affiliation and add links",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping"
+  ],
+  "id": "p-7b12a8d299"
+ }
+]

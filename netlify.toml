@@ -1,0 +1,20 @@
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/crawler/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+# The workbook contains private sheets (My Applications, Document Checklist) — never serve it.
+[[redirects]]
+  from = "/data/tracker.xlsx"
+  to = "/404.html"
+  status = 404
+  force = true

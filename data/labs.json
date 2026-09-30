@@ -1,0 +1,296 @@
+[
+ {
+  "lab_group": "Photogrammetry & Robotics Lab",
+  "university": "University of Bonn",
+  "country": "Germany",
+  "link": "https://www.uni-bonn.de",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "SLAM",
+   "LiDAR Mapping",
+   "Photogrammetry"
+  ],
+  "id": "l-f72ef49f80"
+ },
+ {
+  "lab_group": "Photogrammetry and Remote Sensing (IGP)",
+  "university": "ETH Zurich",
+  "country": "Switzerland",
+  "link": "https://ethz.ch",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Photogrammetry",
+   "GeoAI / Deep Learning",
+   "Computer Vision (2D/3D)"
+  ],
+  "id": "l-d4e618859b"
+ },
+ {
+  "lab_group": "Institute for Photogrammetry and Geoinformatics",
+  "university": "University of Stuttgart",
+  "country": "Germany",
+  "link": "https://www.uni-stuttgart.de",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping"
+  ],
+  "id": "l-f61451b33a"
+ },
+ {
+  "lab_group": "Data Science in Earth Observation",
+  "university": "Technical University of Munich",
+  "country": "Germany",
+  "link": "https://www.tum.de",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "GeoAI / Deep Learning",
+   "Remote Sensing"
+  ],
+  "id": "l-1e67d2583a"
+ },
+ {
+  "lab_group": "Institute of Photogrammetry and GeoInformation",
+  "university": "Leibniz University Hannover",
+  "country": "Germany",
+  "link": "https://www.uni-hannover.de",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping",
+   "Computer Vision (2D/3D)"
+  ],
+  "id": "l-d44a2f1e77"
+ },
+ {
+  "lab_group": "Faculty ITC (Earth Observation Science)",
+  "university": "University of Twente",
+  "country": "Netherlands",
+  "link": "https://www.utwente.nl",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Remote Sensing",
+   "Photogrammetry",
+   "LiDAR Mapping"
+  ],
+  "id": "l-e25b1d5972"
+ },
+ {
+  "lab_group": "Geoscience and Remote Sensing",
+  "university": "TU Delft",
+  "country": "Netherlands",
+  "link": "https://www.tudelft.nl",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Remote Sensing",
+   "Adjustment & Geodesy"
+  ],
+  "id": "l-b77bf12165"
+ },
+ {
+  "lab_group": "Geodesy and Geoinformation (Photogrammetry)",
+  "university": "TU Wien",
+  "country": "Austria",
+  "link": "https://www.tuwien.at",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "LiDAR Mapping",
+   "Forest LiDAR"
+  ],
+  "id": "l-07c78173cc"
+ },
+ {
+  "lab_group": "Remote Sensing Laboratories",
+  "university": "University of Zurich",
+  "country": "Switzerland",
+  "link": "https://www.uzh.ch",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Remote Sensing",
+   "Forest LiDAR"
+  ],
+  "id": "l-dfe38ecbbb"
+ },
+ {
+  "lab_group": "Finnish Geospatial Research Institute",
+  "university": "National Land Survey of Finland",
+  "country": "Finland",
+  "link": "https://www.maanmittauslaitos.fi",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Forest LiDAR",
+   "LiDAR Mapping"
+  ],
+  "id": "l-834969395f"
+ },
+ {
+  "lab_group": "Digital Photogrammetry Research Group",
+  "university": "Purdue University",
+  "country": "USA",
+  "link": "https://www.purdue.edu",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping"
+  ],
+  "id": "l-71c8b79cbe"
+ },
+ {
+  "lab_group": "Geodetic Science",
+  "university": "Ohio State University",
+  "country": "USA",
+  "link": "https://www.osu.edu",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Adjustment & Geodesy",
+   "Photogrammetry"
+  ],
+  "id": "l-b89bc18cca"
+ },
+ {
+  "lab_group": "Geomatics (Civil & Construction Eng.)",
+  "university": "Oregon State University",
+  "country": "USA",
+  "link": "https://oregonstate.edu",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "LiDAR Mapping",
+   "Photogrammetry"
+  ],
+  "id": "l-ec3c551f68"
+ },
+ {
+  "lab_group": "Geomatics Engineering",
+  "university": "University of Calgary",
+  "country": "Canada",
+  "link": "https://www.ucalgary.ca",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Adjustment & Geodesy",
+   "LiDAR Mapping",
+   "SLAM"
+  ],
+  "id": "l-4a8043f028"
+ },
+ {
+  "lab_group": "Geodesy and Geomatics Engineering",
+  "university": "University of New Brunswick",
+  "country": "Canada",
+  "link": "https://www.unb.ca",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Adjustment & Geodesy",
+   "Remote Sensing"
+  ],
+  "id": "l-1ccea51caa"
+ },
+ {
+  "lab_group": "Center for Spatial Information Science",
+  "university": "University of Tokyo",
+  "country": "Japan",
+  "link": "https://www.u-tokyo.ac.jp",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "l-bc30af5e0c"
+ },
+ {
+  "lab_group": "LIESMARS (Surveying, Mapping & RS)",
+  "university": "Wuhan University",
+  "country": "China",
+  "link": "https://www.whu.edu.cn",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping",
+   "Remote Sensing"
+  ],
+  "id": "l-a2b2f88a63"
+ },
+ {
+  "lab_group": "Aerospace Information Research Institute",
+  "university": "Chinese Academy of Sciences",
+  "country": "China",
+  "link": "https://www.cas.cn",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Remote Sensing",
+   "GeoAI / Deep Learning"
+  ],
+  "id": "l-28d0347fda"
+ },
+ {
+  "lab_group": "Land Surveying & Geo-Informatics (LSGI)",
+  "university": "Hong Kong Polytechnic University",
+  "country": "Hong Kong",
+  "link": "https://www.polyu.edu.hk",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Photogrammetry",
+   "LiDAR Mapping",
+   "Adjustment & Geodesy"
+  ],
+  "id": "l-925bea894a"
+ },
+ {
+  "lab_group": "Centre for Remote Imaging, Sensing and Processing",
+  "university": "National University of Singapore",
+  "country": "Singapore",
+  "link": "https://www.nus.edu.sg",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Remote Sensing",
+   "Image Processing"
+  ],
+  "id": "l-8c94930c52"
+ },
+ {
+  "lab_group": "Geospatial Engineering (Civil & Env. Eng.)",
+  "university": "UNSW Sydney",
+  "country": "Australia",
+  "link": "https://www.unsw.edu.au",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "Adjustment & Geodesy",
+   "Remote Sensing",
+   "Photogrammetry"
+  ],
+  "id": "l-11eda74fc3"
+ },
+ {
+  "lab_group": "Infrastructure Engineering (Geomatics)",
+  "university": "University of Melbourne",
+  "country": "Australia",
+  "link": "https://www.unimelb.edu.au",
+  "typical_intake": "Check group page",
+  "notes": "Link is the university homepage — replace with the lab page once verified",
+  "areas": [
+   "LiDAR Mapping",
+   "Remote Sensing"
+  ],
+  "id": "l-03ba23495d"
+ }
+]

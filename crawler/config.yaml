@@ -1,0 +1,120 @@
+# ─────────────────────────────────────────────────────────────
+# PhD Board crawler configuration. Edit freely; no code changes needed.
+# ─────────────────────────────────────────────────────────────
+user_agent: "PhDBoard-bot/1.0 (academic job aggregator; contact: CHANGE_ME@example.com)"
+request_delay_seconds: 3        # politeness delay between requests to the same domain
+timeout_seconds: 25
+max_items_per_page: 60
+expire_after_days_unseen: 60    # a listing not seen for this long moves to the archive
+include_postdoc: false          # set true to also keep postdoc listings
+
+# Search terms sent to every source that has {q} in its URL
+queries:
+  - "LiDAR"
+  - "SLAM"
+  - "photogrammetry"
+  - "point cloud"
+  - "forest remote sensing"
+  - "remote sensing"
+  - "earth observation deep learning"
+  - "3D computer vision"
+  - "geospatial"
+  - "geodesy"
+
+# Canonical research areas. Names MUST match the "Research Areas" values used in Excel.
+# terms: any match tags the area. context_required: if given, at least one of these must
+# also appear (stops e.g. every generic deep-learning PhD from being tagged).
+research_areas:
+  "LiDAR Mapping":
+    terms: [lidar, "laser scanning", "laser scanner", "point cloud", "point clouds", "mobile mapping", "airborne laser", "terrestrial laser", als, tls, mls]
+  "Forest LiDAR":
+    terms: [forest, forestry, "tree detection", "individual tree", biomass, canopy, "vegetation structure"]
+    context_required: [lidar, "laser scanning", "point cloud", "remote sensing", "earth observation", uav, drone]
+  "SLAM":
+    terms: [slam, "simultaneous localization", "simultaneous localisation", odometry, "loop closure", "state estimation", "visual-inertial", "lidar-inertial", "robot localization", "robot localisation"]
+  "Photogrammetry":
+    terms: [photogrammetry, photogrammetric, "structure from motion", "structure-from-motion", "bundle adjustment", "dense matching", "multi-view stereo", "3d reconstruction", "oblique imagery", "aerial triangulation"]
+  "Image Processing":
+    terms: ["image processing", "image analysis", "image understanding", "hyperspectral imaging"]
+    context_required: [geospatial, "remote sensing", "earth observation", satellite, aerial, uav, drone, mapping, gis, geomatics, photogrammetry, lidar]
+  "GeoAI / Deep Learning":
+    terms: ["deep learning", "machine learning", geoai, "neural network", "neural networks", "foundation model", "foundation models", transformer, "artificial intelligence"]
+    context_required: [geospatial, "remote sensing", "earth observation", satellite, aerial, lidar, "point cloud", mapping, gis, geomatics, photogrammetry, uav, drone, urban, forest, terrain]
+  "Computer Vision (2D/3D)":
+    terms: ["computer vision", "3d vision", "3d reconstruction", "scene understanding", "semantic segmentation", "object detection", "3d perception", "neural radiance", nerf, "gaussian splatting", "depth estimation"]
+    context_required: [geospatial, "remote sensing", "earth observation", satellite, aerial, lidar, "point cloud", mapping, gis, geomatics, photogrammetry, uav, drone, urban, robot, robotics, autonomous]
+  "Adjustment & Geodesy":
+    terms: ["least squares", "least-squares", "adjustment theory", "adjustment computation", geodesy, geodetic, "sensor fusion", "kalman filter", gnss, "estimation theory", "error propagation"]
+  "Remote Sensing":
+    terms: ["remote sensing", "earth observation", satellite, hyperspectral, multispectral, "synthetic aperture radar", sar, insar, sentinel, landsat, "aerial imagery", uav, drone]
+
+position_keywords: [phd, "ph.d", doctoral, doctorate, "doctoral candidate", "doctoral researcher", studentship, "fully funded", "phd student", "phd position", "phd scholarship", "graduate research assistant"]
+postdoc_keywords: [postdoc, "post-doc", postdoctoral, "research fellow"]
+scholarship_keywords: [scholarship, studentship, fellowship, stipend]
+
+# ─────────────────────────────────────────────────────────────
+# Sources
+#   type: html_search -> URL with {q}; every link on the result page is checked
+#   type: html_page   -> fixed page (e.g. a department's vacancies page)
+#   type: rss         -> RSS/Atom feed (URL may contain {q})
+#   phd_only: true    -> source lists only PhDs, so a PhD keyword isn't required
+#   same_site: true   -> keep only links on the source's own domain (drops ads / nav)
+# A source that fails (403, timeout, changed layout) is logged in data/meta.json and the
+# run continues. Check the "Source health" panel on the site after the first run.
+# ─────────────────────────────────────────────────────────────
+sources:
+  - name: FindAPhD
+    type: html_search
+    url: "https://www.findaphd.com/phds/?Keywords={q}"
+    phd_only: true
+    same_site: true
+  - name: jobs.ac.uk
+    type: html_search
+    url: "https://www.jobs.ac.uk/search/?keywords={q}+phd"
+    same_site: true
+  - name: EURAXESS
+    type: html_search
+    url: "https://euraxess.ec.europa.eu/jobs/search?keywords={q}%20phd"
+    same_site: true
+  - name: Academic Positions
+    type: html_search
+    url: "https://academicpositions.com/find-jobs?search={q}%20phd"
+    same_site: true
+  - name: Nature Careers
+    type: html_search
+    url: "https://www.nature.com/naturecareers/jobs/search?keywords={q}+phd"
+    same_site: true
+  - name: ScholarshipDb
+    type: html_search
+    url: "https://scholarshipdb.net/scholarships?q={q}"
+    phd_only: true
+    same_site: true
+  - name: University Affairs (Canada)
+    type: html_search
+    url: "https://www.universityaffairs.ca/search-job/?keywords={q}"
+    same_site: true
+
+  # ── Department / lab vacancy pages: add as many as you like ──
+  # - name: "Example Dept — Vacancies"
+  #   type: html_page
+  #   url: "https://www.example-university.edu/department/jobs"
+  #   same_site: false
+
+  # ── Google Alerts RSS (the compliant way to catch LinkedIn/web posts) ──
+  # Create an alert at google.com/alerts, set "Deliver to: RSS feed", paste the URL here.
+  # - name: "Google Alert: PhD LiDAR"
+  #   type: rss
+  #   url: "https://www.google.com/alerts/feeds/XXXXXXXX/YYYYYYYY"
+  #   same_site: false
+
+# Official X API (paid). Runs only when the X_BEARER_TOKEN secret is set.
+x_api:
+  min_interval_hours: 12     # limits API spend; the rest of the crawler still runs every 4 h
+  max_results: 100
+  query: >-
+    ("phd position" OR "phd positions" OR "phd opening" OR "fully funded phd" OR "phd student position" OR "doctoral position" OR "phd scholarship")
+    (lidar OR slam OR photogrammetry OR "point cloud" OR "remote sensing" OR "earth observation" OR geospatial OR geodesy)
+    -is:retweet
+
+# Extra URLs for the one-off Wayback Machine backfill (python crawler/backfill_wayback.py)
+backfill_urls: []

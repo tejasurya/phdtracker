@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PhD Board: Geospatial PhD positions, scholarships and labs</title>
+<meta name="description" content="PhD positions and scholarships in LiDAR, SLAM, photogrammetry, remote sensing and GeoAI, updated every 4 hours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1B1464; --navy-2:#2A2290; --teal:#0096B4; --teal-bg:#E3F4F8;
+  --ink:#16151F; --ink-2:#4A4859; --ink-3:#817F8F;
+  --bg:#F4F4F9; --card:#FFFFFF; --line:#E3E2EC; --line-2:#CBC9DA;
+  --green:#0B7A4B; --green-bg:#E4F6EE; --amber:#A45C06; --amber-bg:#FDF1DC; --red:#B42318; --red-bg:#FDE8E6;
+  --r:10px;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --serif:'DM Serif Display',Georgia,'Times New Roman',serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:120px}
+body{margin:0;font:14px/1.5 var(--sans);color:var(--ink);background:var(--bg)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+button{font:inherit;cursor:pointer}
+
+/* header */
+.top{background:var(--navy);color:#fff;padding-top:env(safe-area-inset-top,0px)}
+.top-row{max-width:1240px;margin:0 auto;padding:14px 20px 0;display:flex;align-items:center;gap:16px}
+.logo{font-family:var(--serif);font-size:24px;letter-spacing:-.2px;text-decoration:none}
+.logo b{color:#7FD8EA;font-weight:400}
+.top-meta{margin-left:auto;font-size:12px;color:rgba(255,255,255,.7);text-align:right}
+.top-meta strong{color:#fff;font-weight:600}
+.hero{max-width:1240px;margin:0 auto;padding:18px 20px 22px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(24px,3.6vw,34px);line-height:1.15;margin:0 0 4px}
+.hero p{margin:0 0 16px;color:rgba(255,255,255,.72);max-width:640px}
+.searchbar{display:flex;gap:0;background:#fff;border-radius:999px;padding:6px;max-width:860px;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.searchbar input,.searchbar select{border:0;background:transparent;font:inherit;color:var(--ink);padding:10px 16px;min-width:0}
+.searchbar input{flex:1}
+.searchbar input:focus,.searchbar select:focus{outline:none}
+.searchbar .sep{width:1px;background:var(--line);margin:6px 0}
+.searchbar select{width:190px;cursor:pointer}
+.searchbar .go{border:0;background:var(--teal);color:#fff;font-weight:600;border-radius:999px;padding:10px 26px}
+.searchbar .go:hover{background:#007F99}
+@media(max-width:640px){.searchbar{flex-wrap:wrap;border-radius:14px}.searchbar .sep{display:none}.searchbar select{width:100%;border-top:1px solid var(--line)}.searchbar .go{width:100%}}
+
+/* tabs */
+.tabs-wrap{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line)}
+.tabs{max-width:1240px;margin:0 auto;padding:0 12px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{border:0;background:none;padding:14px 14px 12px;color:var(--ink-2);font-weight:500;border-bottom:3px solid transparent;white-space:nowrap}
+.tab:hover{color:var(--navy)}
+.tab[aria-selected=true]{color:var(--navy);border-bottom-color:var(--navy);font-weight:600}
+.tab .n{font-size:11px;color:var(--ink-3);margin-left:4px;font-weight:500}
+
+/* stats */
+.stats{max-width:1240px;margin:0 auto;padding:14px 20px 0;display:flex;gap:10px;flex-wrap:wrap}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:8px 14px;font-size:12.5px;color:var(--ink-2)}
+.stat b{color:var(--ink);font-size:15px;margin-right:4px}
+
+/* layout */
+.layout{max-width:1240px;margin:0 auto;padding:16px 20px 40px;display:grid;grid-template-columns:260px minmax(0,1fr);gap:20px;align-items:start}
+.filters{position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto;background:#fff;border:1px solid var(--line);border-radius:var(--r)}
+.f-head{display:flex;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line)}
+.f-head h2{font-size:14px;margin:0}
+.f-head .clear{margin-left:auto;border:0;background:none;color:var(--teal);font-size:12.5px;font-weight:600}
+.f-close{display:none;border:0;background:none;font-size:22px;margin-left:10px;color:var(--ink-2)}
+.fg{padding:12px 16px;border-bottom:1px solid var(--line)}
+.fg:last-child{border-bottom:0}
+.fg h3{font-size:13px;margin:0 0 8px;color:var(--ink)}
+.opt{display:flex;align-items:center;gap:8px;padding:3px 0;font-size:13px;color:var(--ink-2);cursor:pointer}
+.opt input{accent-color:var(--navy);width:15px;height:15px;margin:0}
+.opt .c{margin-left:auto;font-size:11.5px;color:var(--ink-3)}
+.more{border:0;background:none;color:var(--teal);font-size:12.5px;padding:4px 0 0;font-weight:600}
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .filters{position:fixed;inset:0 auto 0 0;width:min(320px,88vw);max-height:none;border-radius:0;z-index:60;transform:translateX(-102%);transition:transform .22s ease;padding-top:env(safe-area-inset-top,0px)}
+  .filters.open{transform:none}
+  .f-close{display:block}
+  .scrim{position:fixed;inset:0;background:rgba(10,10,30,.4);z-index:55}
+}
+@media(prefers-reduced-motion:reduce){.filters{transition:none}}
+
+/* toolbar */
+.toolbar{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.count{font-size:13px;color:var(--ink-2);margin-right:auto}
+.count b{color:var(--ink)}
+.toolbar select,.fbtn{border:1px solid var(--line-2);background:#fff;border-radius:8px;padding:7px 10px;font:inherit;font-size:12.5px;color:var(--ink)}
+.fbtn{display:none}
+@media(max-width:900px){.fbtn{display:inline-block}}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.pill{border:1px solid #BDE3EC;background:var(--teal-bg);color:#006F86;border-radius:999px;padding:3px 10px;font-size:12px}
+
+/* cards */
+.list{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
+.card:hover{border-color:var(--line-2);box-shadow:0 2px 12px rgba(27,20,100,.06)}
+.c-top{display:flex;gap:12px;align-items:flex-start}
+.c-main{flex:1;min-width:0}
+.c-title{font-size:16px;font-weight:600;line-height:1.35;margin:0 0 3px;color:var(--navy)}
+.c-title a{text-decoration:none}
+.c-title a:hover{text-decoration:underline}
+.c-org{font-size:13px;color:var(--ink-2)}
+.cc{flex:none;min-width:38px;height:38px;border-radius:9px;border:1px solid var(--line);background:var(--bg);display:grid;place-items:center;font-size:11.5px;font-weight:700;color:var(--ink-2)}
+.new{display:inline-block;vertical-align:2px;margin-left:6px;font-size:10.5px;font-weight:700;color:#fff;background:var(--green);border-radius:4px;padding:1px 6px}
+.facts{display:flex;flex-wrap:wrap;gap:4px 16px;margin:10px 0 0;font-size:12.5px;color:var(--ink-2)}
+.facts span{display:inline-flex;gap:5px;align-items:center}
+.facts .k{color:var(--ink-3)}
+.dl{font-weight:600;border-radius:6px;padding:1px 8px}
+.dl.urgent{color:var(--red);background:var(--red-bg)}
+.dl.soon{color:var(--amber);background:var(--amber-bg)}
+.dl.later{color:var(--green);background:var(--green-bg)}
+.dl.past{color:var(--ink-3);background:var(--bg)}
+.snip{margin:10px 0 0;color:var(--ink-2);font-size:13px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card.expanded .snip{-webkit-line-clamp:unset}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tag{font-size:11.5px;border-radius:999px;padding:2px 10px;background:#EEEDF8;color:#3B3485;border:1px solid #DAD7F0}
+.tag.plain{background:#fff;color:var(--ink-2);border-color:var(--line)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.btn{display:inline-flex;align-items:center;gap:6px;border-radius:8px;padding:6px 12px;font-size:12.5px;font-weight:600;text-decoration:none;border:1px solid var(--line-2);background:#fff;color:var(--ink)}
+.btn:hover{border-color:var(--navy);color:var(--navy)}
+.btn.primary{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.primary:hover{background:var(--navy-2);color:#fff}
+.btn.saved{border-color:var(--teal);color:#006F86;background:var(--teal-bg)}
+.btn.ghost{border-style:dashed;color:var(--ink-2);font-weight:500}
+.btn.right{margin-left:auto}
+.status{font-size:11.5px;font-weight:600;border-radius:999px;padding:2px 10px;flex:none}
+.status.open{background:var(--green-bg);color:var(--green)}
+.status.closed{background:var(--bg);color:var(--ink-3)}
+.status.applied{background:#E3ECFD;color:#1D4ED8}
+
+.empty{background:#fff;border:1px dashed var(--line-2);border-radius:var(--r);padding:36px 24px;text-align:center;color:var(--ink-2)}
+.empty h3{margin:0 0 6px;color:var(--ink);font-size:16px}
+.empty p{margin:4px auto;max-width:520px}
+.empty code{background:var(--bg);padding:1px 5px;border-radius:4px}
+
+.pager{display:flex;justify-content:center;gap:6px;margin-top:18px;flex-wrap:wrap}
+.pager button{border:1px solid var(--line-2);background:#fff;border-radius:8px;min-width:36px;padding:6px 10px;font-size:13px}
+.pager button[aria-current=page]{background:var(--navy);border-color:var(--navy);color:#fff}
+.pager button:disabled{opacity:.4;cursor:default}
+
+footer{border-top:1px solid var(--line);background:#fff;padding:18px 20px calc(18px + env(safe-area-inset-bottom,0px));font-size:12.5px;color:var(--ink-3)}
+footer .in{max-width:1240px;margin:0 auto}
+footer summary{cursor:pointer;color:var(--ink-2);font-weight:600}
+.health{margin-top:10px;overflow-x:auto}
+.health table{border-collapse:collapse;width:100%;min-width:560px}
+.health td,.health th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;font-size:12px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--ink-3)}
+.dot.ok{background:var(--green)}.dot.error{background:var(--red)}.dot.skipped{background:var(--amber)}
+.loading{padding:40px;text-align:center;color:var(--ink-3)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-row">
+    <a class="logo" href="#positions">PhD<b>Board</b></a>
+    <div class="top-meta" id="top-meta">Loading…</div>
+  </div>
+  <div class="hero">
+    <h1>PhD positions in LiDAR, SLAM, photogrammetry and remote sensing</h1>
+    <p>Crawled from academic job boards every 4 hours, plus scholarships, labs to watch and professors, curated by hand.</p>
+    <form class="searchbar" id="searchbar" role="search">
+      <input id="q" type="search" placeholder="Keyword: e.g. point cloud, forest, TU Munich" aria-label="Keyword">
+      <span class="sep"></span>
+      <select id="region" aria-label="Region">
+        <option value="">All regions</option>
+      </select>
+      <button class="go" type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+<nav class="tabs-wrap" aria-label="Sections">
+  <div class="tabs" id="tabs" role="tablist"></div>
+</nav>
+
+<div class="stats" id="stats"></div>
+
+<div class="layout">
+  <aside class="filters" id="filters" aria-label="Filters"></aside>
+  <main>
+    <div class="toolbar">
+      <button class="fbtn" id="fbtn" type="button">Filters</button>
+      <span class="count" id="count"></span>
+      <select id="sort" aria-label="Sort"></select>
+    </div>
+    <div class="pills" id="pills"></div>
+    <div class="list" id="list"><div class="loading">Loading listings…</div></div>
+    <div class="pager" id="pager"></div>
+  </main>
+</div>
+
+<footer>
+  <div class="in">
+    <details id="health-box">
+      <summary>Source health</summary>
+      <div class="health" id="health"></div>
+    </details>
+    <p>Listings are collected automatically and can be wrong or out of date. Always confirm details on the official page before applying.</p>
+  </div>
+</footer>
+
+<script>
+"use strict";
+/* ───────────── constants ───────────── */
+const AREAS = ["LiDAR Mapping","Forest LiDAR","SLAM","Photogrammetry","Image Processing","GeoAI / Deep Learning","Computer Vision (2D/3D)","Adjustment & Geodesy","Remote Sensing"];
+const REGIONS = ["North America","Europe","East Asia","Southeast Asia","Oceania","Other"];
+const NON_EU_REGION = {USA:"North America",Canada:"North America",Japan:"East Asia",China:"East Asia","Hong Kong":"East Asia",Taiwan:"East Asia","South Korea":"East Asia",Singapore:"Southeast Asia",Malaysia:"Southeast Asia",Australia:"Oceania","New Zealand":"Oceania",India:"Other"};
+const EUROPE = new Set(["UK","Ireland","Germany","Netherlands","Switzerland","Austria","Belgium","France","Italy","Spain","Portugal","Denmark","Sweden","Norway","Finland","Poland","Czech Republic","Estonia","Greece","Hungary","European Union","Türkiye","Luxembourg","Slovenia"]);
+const CC = {USA:"US",Canada:"CA",UK:"UK",Ireland:"IE",Germany:"DE",Netherlands:"NL",Switzerland:"CH",Austria:"AT",Belgium:"BE",France:"FR",Italy:"IT",Spain:"ES",Portugal:"PT",Denmark:"DK",Sweden:"SE",Norway:"NO",Finland:"FI",Poland:"PL","Czech Republic":"CZ",Estonia:"EE",Greece:"GR",Hungary:"HU","European Union":"EU","Türkiye":"TR",Japan:"JP",China:"CN","Hong Kong":"HK",Taiwan:"TW","South Korea":"KR",Singapore:"SG",Australia:"AU","New Zealand":"NZ",India:"IN"};
+const ORIGIN_LABEL = {crawler:"Crawler",excel:"Your sheet",wayback:"Wayback archive",x:"X (auto)"};
+const PAGE_SIZE = 20;
+const DAY = 864e5;
+const TODAY = new Date(new Date().toDateString());
+
+const regionOf = c => !c ? "" : NON_EU_REGION[c] || (EUROPE.has(c) ? "Europe" : "Other");
+
+/* ───────────── helpers ───────────── */
+const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+const safeUrl = u => /^https?:\/\//i.test(String(u || "")) ? String(u) : "";
+const isoDate = v => (typeof v === "string" && /^\d{4}-\d{2}-\d{2}/.test(v)) ? v.slice(0, 10) : null;
+const toDate = v => { const s = isoDate(v); return s ? new Date(s + "T00:00:00") : null; };
+const daysUntil = v => { const d = toDate(v); return d ? Math.round((d - TODAY) / DAY) : null; };
+const ageDays = v => { if (!v) return null; const d = new Date(v); return isNaN(d) ? null : (Date.now() - d) / DAY; };
+function ago(v){
+  const a = ageDays(v); if (a === null) return "";
+  if (a < 1/24) return "just now";
+  if (a < 1) return Math.round(a * 24) + " h ago";
+  if (a < 30) return Math.round(a) + (Math.round(a) === 1 ? " day ago" : " days ago");
+  if (a < 365) return Math.round(a / 30) + " mo ago";
+  return new Date(v).toLocaleDateString("en-GB", {month:"short", year:"numeric"});
+}
+function urgency(dateStr){
+  const d = daysUntil(dateStr);
+  if (d === null) return null;
+  if (d < 0) return "past";
+  if (d <= 30) return "urgent";
+  if (d <= 90) return "soon";
+  return "later";
+}
+function deadlineChip(dateStr, text){
+  const u = urgency(dateStr), d = daysUntil(dateStr);
+  if (!u) return text ? `<span><span class="k">Deadline</span> ${esc(text)}</span>` : "";
+  const label = u === "past" ? "Deadline passed" : d === 0 ? "Closes today" : d <= 30 ? `${d} day${d === 1 ? "" : "s"} left` :
+    new Date(dateStr).toLocaleDateString("en-GB", {day:"numeric", month:"short", year:"numeric"});
+  return `<span><span class="k">Deadline</span> <span class="dl ${u}" title="${esc(text || dateStr)}">${esc(label)}</span></span>`;
+}
+async function getJSON(path, fallback){
+  try { const r = await fetch(path + "?t=" + Date.now(), {cache: "no-store"}); return r.ok ? await r.json() : fallback; }
+  catch { return fallback; }
+}
+const store = {
+  get(k, d){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+};
+const q = s => encodeURIComponent(s);
+
+/* ───────────── data ───────────── */
+const DB = {positions: [], scholarships: [], labs: [], profs: [], meta: null};
+
+function normPositionCrawler(p){
+  return {kind:"position", id:"c-" + p.id, title:p.title, org:p.institution || "", country:p.country || "",
+    region:p.region || regionOf(p.country), areas:p.areas || [], type:p.type || "PhD Position", source:p.source || "",
+    url:p.url, alt:p.archived_url, snippet:p.snippet || "", posted:p.first_seen, deadline:isoDate(p.deadline),
+    deadlineText:p.deadline_text || "", status:p.status === "expired" ? "expired" : "open",
+    relevance:p.relevance || 0, origin:p.origin || "crawler"};
+}
+function normPositionExcel(e){
+  const deadline = isoDate(e.deadline);
+  const closed = /^(closed|expired|filled)/i.test(e.status || "");
+  const past = deadline && daysUntil(deadline) < 0;
+  return {kind:"position", id:e.id, title:e.title, org:[e.department, e.institution].filter(Boolean).join(", "),
+    country:e.country || "", region:regionOf(e.country), areas:e.areas || [], type:e.type || "PhD Position",
+    source:e.source || "Manual", url:e.link, snippet:[e.supervisor ? "Supervisor: " + e.supervisor : "", e.stipend ? "Stipend: " + e.stipend : "", e.notes].filter(Boolean).join(" · "),
+    posted:isoDate(e.posted_on), deadline, deadlineText:String(e.deadline || ""), status:(closed || past) ? "expired" : "open",
+    relevance:999, origin:"excel"};
+}
+function normScholarship(s){
+  return {kind:"scholarship", id:s.id, title:s.scholarship, org:s.university_program || "", country:s.country || "",
+    region:regionOf(s.country), field:s.field || "", funding:s.funding || "", stipend:s.stipend || "",
+    language:s.language || "", url:s.link, snippet:s.notes || "", deadline:isoDate(s.deadline_sort),
+    deadlineText:s.deadline || "", status:s.status || "Open", areas:[]};
+}
+function normLab(l){
+  return {kind:"lab", id:l.id, title:l.lab_group, org:l.university || "", country:l.country || "", region:regionOf(l.country),
+    areas:l.areas || [], url:l.link, intake:l.typical_intake || "", snippet:l.notes || "", origin:"excel"};
+}
+function normProf(p){
+  return {kind:"prof", id:p.id, title:p.name, org:[p.department_lab, p.university].filter(Boolean).join(", "), univ:p.university || "",
+    country:p.country || "", region:regionOf(p.country), areas:p.areas || [], snippet:p.notes || "", origin:"excel",
+    links:{Homepage:p.homepage, "Google Scholar":p.google_scholar, LinkedIn:p.linkedin,
+      X:p.x_twitter ? "https://x.com/" + String(p.x_twitter).replace(/^@/, "") : "",
+      Bluesky:p.bluesky ? "https://bsky.app/profile/" + String(p.bluesky).replace(/^@/, "") : ""}};
+}
+function normHandle(h){
+  return {kind:"prof", id:"h-" + h.handle, title:h.name || "@" + h.handle, org:h.bio || "", univ:"", country:"", region:"",
+    areas:h.areas || [], snippet:`Posted ${h.posts || 1} relevant opening${(h.posts || 1) > 1 ? "s" : ""} on X. Latest: ${ago(h.last_seen)}.`,
+    origin:"x", links:{X:"https://x.com/" + h.handle, "Latest post":h.last_post}};
+}
+
+/* ───────────── tabs, facets, sorts ───────────── */
+const F = {
+  region:  {label:"Region",        get:i => i.region},
+  country: {label:"Country",       get:i => i.country},
+  areas:   {label:"Research area", get:i => i.areas},
+  type:    {label:"Position type", get:i => i.type},
+  source:  {label:"Source",        get:i => i.source},
+  funding: {label:"Funding",       get:i => i.funding},
+  status:  {label:"Status",        get:i => i.status},
+  origin:  {label:"Listed by",     get:i => ORIGIN_LABEL[i.origin] || i.origin},
+  year:    {label:"Year",          get:i => (i.deadline || i.posted || "").slice(0, 4) || "Unknown"},
+  kind:    {label:"Kind",          get:i => ({position:"Position", scholarship:"Scholarship", lab:"Lab", prof:"Person"})[i.kind]},
+};
+const SORTS = {
+  newest:    {label:"Newest first",           fn:(a, b) => String(b.posted || "").localeCompare(String(a.posted || ""))},
+  deadline:  {label:"Deadline (soonest)",     fn:(a, b) => {
+                 const da = a.deadline && daysUntil(a.deadline) >= 0 ? a.deadline : "9999", db = b.deadline && daysUntil(b.deadline) >= 0 ? b.deadline : "9999";
+                 return da.localeCompare(db); }},
+  relevance: {label:"Best match",             fn:(a, b) => (b.relevance || 0) - (a.relevance || 0)},
+  alpha:     {label:"A to Z",                 fn:(a, b) => String(a.title).localeCompare(String(b.title))},
+  country:   {label:"Country",                fn:(a, b) => String(a.country).localeCompare(String(b.country)) || String(a.title).localeCompare(String(b.title))},
+};
+const WINDOWS = {
+  posted:   {label:"Posted", opts:[["","Any time"],["1","Last 24 hours"],["7","Last 7 days"],["30","Last 30 days"]]},
+  deadline: {label:"Deadline", opts:[["","Any"],["urgent","Within 30 days"],["soon","30 to 90 days"],["later","More than 90 days"],["none","No date given"]]},
+};
+const TABS = {
+  positions:    {label:"Open positions", data:() => DB.positions.filter(p => p.status === "open"), facets:["areas","region","country","type","source","origin"], windows:["posted","deadline"], sorts:["newest","deadline","relevance"]},
+  scholarships: {label:"Scholarships", data:() => DB.scholarships, facets:["region","country","funding","status"], windows:["deadline"], sorts:["deadline","alpha","country"]},
+  labs:         {label:"Labs to watch", data:() => DB.labs, facets:["areas","region","country"], windows:[], sorts:["alpha","country"]},
+  profs:        {label:"Professors & accounts", data:() => DB.profs, facets:["areas","region","country","origin"], windows:[], sorts:["alpha","country"]},
+  archive:      {label:"Archive", data:() => DB.positions.filter(p => p.status !== "open"), facets:["year","areas","region","country","source","origin"], windows:[], sorts:["newest","alpha"]},
+  saved:        {label:"Saved", data:() => allItems().filter(i => state.saved.has(i.id)), facets:["kind"], windows:[], sorts:["newest","deadline","alpha"]},
+};
+const allItems = () => [...DB.positions, ...DB.scholarships, ...DB.labs, ...DB.profs];
+
+const state = {tab:"positions", q:"", sel:{}, win:{}, sort:null, page:1, showAll:{}, saved:new Set(store.get("phdboard_saved", []))};
+
+/* ───────────── filtering ───────────── */
+function vals(item, key){ const v = F[key].get(item); return (Array.isArray(v) ? v : [v]).filter(x => x !== undefined && x !== null && x !== ""); }
+function matches(item, skipKey){
+  const tab = TABS[state.tab];
+  for (const key of tab.facets){
+    if (key === skipKey) continue;
+    const s = state.sel[key];
+    if (s && s.size && !vals(item, key).some(v => s.has(v))) return false;
+  }
+  if (tab.windows.includes("posted") && state.win.posted){
+    const a = ageDays(item.posted); if (a === null || a > +state.win.posted) return false;
+  }
+  if (tab.windows.includes("deadline") && state.win.deadline){
+    const u = urgency(item.deadline);
+    if (state.win.deadline === "none" ? u !== null : u !== state.win.deadline) return false;
+  }
+  if (state.q){
+    const blob = [item.title, item.org, item.country, item.region, item.snippet, item.source, item.field, ...(item.areas || [])].join(" ").toLowerCase();
+    if (!state.q.toLowerCase().split(/\s+/).filter(Boolean).every(t => blob.includes(t))) return false;
+  }
+  return true;
+}
+const filtered = () => TABS[state.tab].data().filter(i => matches(i));
+
+/* ───────────── rendering: shell ───────────── */
+function renderTabs(){
+  document.getElementById("tabs").innerHTML = Object.entries(TABS).map(([k, t]) =>
+    `<button class="tab" role="tab" data-tab="${k}" aria-selected="${k === state.tab}">${esc(t.label)}<span class="n">${t.data().length}</span></button>`).join("");
+}
+function renderStats(){
+  const open = DB.positions.filter(p => p.status === "open");
+  const fresh = open.filter(p => (ageDays(p.posted) ?? 99) <= 1).length;
+  const closing = [...open, ...DB.scholarships].filter(i => urgency(i.deadline) === "urgent").length;
+  document.getElementById("stats").innerHTML =
+    `<div class="stat"><b>${open.length}</b>open positions</div>` +
+    `<div class="stat"><b>${fresh}</b>new in the last 24 h</div>` +
+    `<div class="stat"><b>${closing}</b>deadlines within 30 days</div>` +
+    `<div class="stat"><b>${DB.scholarships.length}</b>scholarships</div>` +
+    `<div class="stat"><b>${DB.labs.length}</b>labs to watch</div>`;
+  const m = DB.meta || {};
+  const active = (m.sources || []).filter(s => s.status !== "skipped");
+  const ok = active.filter(s => s.status === "ok").length;
+  document.getElementById("top-meta").innerHTML = m.last_run
+    ? `Last crawl <strong>${esc(ago(m.last_run))}</strong><br>${ok}/${active.length} sources healthy`
+    : `Crawler hasn't run yet`;
+}
+function renderHealth(){
+  const s = (DB.meta && DB.meta.sources) || [];
+  document.getElementById("health").innerHTML = !s.length ? "<p>No crawl has run yet.</p>" :
+    `<table><thead><tr><th>Source</th><th>Status</th><th>Found</th><th>New</th><th>Last error</th></tr></thead><tbody>` +
+    s.map(x => `<tr><td>${esc(x.name)}</td><td><span class="dot ${esc(x.status)}"></span>${esc(x.note || x.status)}</td><td>${x.found ?? ""}</td><td>${x.new ?? ""}</td><td>${esc((x.errors || [])[0] || "")}</td></tr>`).join("") +
+    `</tbody></table>`;
+}
+function renderRegionSelect(){
+  const sel = document.getElementById("region");
+  sel.innerHTML = `<option value="">All regions</option>` + REGIONS.map(r => `<option>${esc(r)}</option>`).join("");
+  const cur = state.sel.region && state.sel.region.size === 1 ? [...state.sel.region][0] : "";
+  sel.value = cur;
+}
+
+/* ───────────── rendering: filters ───────────── */
+function renderFilters(){
+  const tab = TABS[state.tab];
+  let html = `<div class="f-head"><h2>Filters</h2><button class="clear" type="button" data-act="clear">Clear all</button><button class="f-close" type="button" data-act="close" aria-label="Close filters">×</button></div>`;
+  for (const w of tab.windows){
+    const W = WINDOWS[w];
+    html += `<div class="fg"><h3>${W.label}</h3>` + W.opts.map(([v, l]) =>
+      `<label class="opt"><input type="radio" name="w-${w}" data-win="${w}" value="${v}" ${String(state.win[w] || "") === v ? "checked" : ""}>${esc(l)}</label>`).join("") + `</div>`;
+  }
+  for (const key of tab.facets){
+    const counts = new Map();
+    for (const it of tab.data().filter(i => matches(i, key))) for (const v of vals(it, key)) counts.set(v, (counts.get(v) || 0) + 1);
+    const selected = state.sel[key] || new Set();
+    for (const v of selected) if (!counts.has(v)) counts.set(v, 0);
+    let entries = [...counts.entries()];
+    if (key === "year") entries.sort((a, b) => String(b[0]).localeCompare(String(a[0])));
+    else if (key === "areas") entries.sort((a, b) => AREAS.indexOf(a[0]) - AREAS.indexOf(b[0]));
+    else entries.sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0])));
+    if (!entries.length) continue;
+    const limit = state.showAll[key] ? Infinity : 7;
+    html += `<div class="fg"><h3>${esc(F[key].label)}</h3>` + entries.slice(0, limit).map(([v, n]) =>
+      `<label class="opt"><input type="checkbox" data-facet="${key}" value="${esc(v)}" ${selected.has(v) ? "checked" : ""}><span>${esc(v)}</span><span class="c">${n}</span></label>`).join("") +
+      (entries.length > 7 ? `<button class="more" type="button" data-more="${key}">${state.showAll[key] ? "Show fewer" : `Show all ${entries.length}`}</button>` : "") + `</div>`;
+  }
+  document.getElementById("filters").innerHTML = html;
+}
+function renderPills(){
+  const out = [];
+  for (const [k, s] of Object.entries(state.sel)) for (const v of s) out.push(`<button class="pill" type="button" data-unfacet="${k}" data-v="${esc(v)}">${esc(v)} ×</button>`);
+  for (const [w, v] of Object.entries(state.win)) if (v && TABS[state.tab].windows.includes(w))
+    out.push(`<button class="pill" type="button" data-unwin="${w}">${esc(WINDOWS[w].opts.find(o => o[0] === v)[1])} ×</button>`);
+  if (state.q) out.push(`<button class="pill" type="button" data-unq="1">“${esc(state.q)}” ×</button>`);
+  document.getElementById("pills").innerHTML = out.join("");
+}
+
+/* ───────────── rendering: cards ───────────── */
+const ccBadge = c => `<span class="cc" title="${esc(c || "Country unknown")}">${esc(CC[c] || (c ? c.slice(0, 2).toUpperCase() : "—"))}</span>`;
+const tagList = (areas, extra = []) => (areas && areas.length) || extra.length ?
+  `<div class="tags">${(areas || []).map(a => `<span class="tag">${esc(a)}</span>`).join("")}${extra.map(e => `<span class="tag plain">${esc(e)}</span>`).join("")}</div>` : "";
+const saveBtn = id => `<button class="btn right ${state.saved.has(id) ? "saved" : ""}" type="button" data-save="${esc(id)}">${state.saved.has(id) ? "Saved" : "Save"}</button>`;
+const moreBtn = snip => snip && snip.length > 170 ? `<button class="btn ghost" type="button" data-expand="1">More details</button>` : "";
+
+function cardPosition(i){
+  const url = safeUrl(i.url), alt = safeUrl(i.alt);
+  const isNew = i.status === "open" && (ageDays(i.posted) ?? 99) <= 1;
+  return `<article class="card" data-id="${esc(i.id)}">
+    <div class="c-top">${ccBadge(i.country)}
+      <div class="c-main">
+        <h3 class="c-title">${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(i.title)}</a>` : esc(i.title)}${isNew ? `<span class="new">New</span>` : ""}</h3>
+        <div class="c-org">${esc(i.org || "Institution not detected")}${i.country ? " · " + esc(i.country) : ""}</div>
+      </div>
+      ${i.status === "expired" ? `<span class="status closed">Archived</span>` : ""}
+    </div>
+    <div class="facts">
+      <span><span class="k">Type</span> ${esc(i.type)}</span>
+      <span><span class="k">Source</span> ${esc(i.source)}</span>
+      ${i.posted ? `<span><span class="k">First seen</span> ${esc(ago(i.posted))}</span>` : ""}
+      ${deadlineChip(i.deadline, i.deadlineText)}
+    </div>
+    ${i.snippet ? `<p class="snip">${esc(i.snippet)}</p>` : ""}
+    ${tagList(i.areas)}
+    <div class="actions">
+      ${url ? `<a class="btn primary" href="${esc(url)}" target="_blank" rel="noopener">View listing</a>` : ""}
+      ${alt ? `<a class="btn" href="${esc(alt)}" target="_blank" rel="noopener">Archived copy</a>` : ""}
+      ${moreBtn(i.snippet)}${saveBtn(i.id)}
+    </div></article>`;
+}
+function cardScholarship(i){
+  const url = safeUrl(i.url);
+  const st = /closed/i.test(i.status) ? "closed" : /applied/i.test(i.status) ? "applied" : "open";
+  return `<article class="card" data-id="${esc(i.id)}">
+    <div class="c-top">${ccBadge(i.country)}
+      <div class="c-main"><h3 class="c-title">${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(i.title)}</a>` : esc(i.title)}</h3>
+        <div class="c-org">${esc(i.org)}${i.country ? " · " + esc(i.country) : ""}</div></div>
+      <span class="status ${st}">${esc(i.status)}</span>
+    </div>
+    <div class="facts">
+      ${i.funding ? `<span><span class="k">Funding</span> ${esc(i.funding)}</span>` : ""}
+      ${i.stipend ? `<span><span class="k">Stipend</span> ${esc(i.stipend)}</span>` : ""}
+      ${i.language ? `<span><span class="k">Language</span> ${esc(i.language)}</span>` : ""}
+      ${deadlineChip(i.deadline, i.deadlineText)}
+    </div>
+    ${i.snippet ? `<p class="snip">${esc(i.snippet)}</p>` : ""}
+    ${tagList([], i.field ? [i.field] : [])}
+    <div class="actions">${url ? `<a class="btn primary" href="${esc(url)}" target="_blank" rel="noopener">Official page</a>` : ""}${moreBtn(i.snippet)}${saveBtn(i.id)}</div></article>`;
+}
+function cardLab(i){
+  const url = safeUrl(i.url);
+  const find = `https://www.google.com/search?q=${q(`"${i.title}" ${i.org} PhD position`)}`;
+  return `<article class="card" data-id="${esc(i.id)}">
+    <div class="c-top">${ccBadge(i.country)}
+      <div class="c-main"><h3 class="c-title">${esc(i.title)}</h3><div class="c-org">${esc(i.org)}${i.country ? " · " + esc(i.country) : ""}</div></div></div>
+    <div class="facts">${i.intake ? `<span><span class="k">Intake</span> ${esc(i.intake)}</span>` : ""}</div>
+    ${i.snippet ? `<p class="snip">${esc(i.snippet)}</p>` : ""}
+    ${tagList(i.areas)}
+    <div class="actions">${url ? `<a class="btn primary" href="${esc(url)}" target="_blank" rel="noopener">Website</a>` : ""}
+      <a class="btn" href="${esc(find)}" target="_blank" rel="noopener">Search for openings</a>${saveBtn(i.id)}</div></article>`;
+}
+function cardProf(i){
+  const given = Object.entries(i.links || {}).filter(([, u]) => safeUrl(u));
+  const who = `${i.title} ${i.univ || ""}`.trim();
+  const searches = i.origin === "x" ? [] : [
+    ["Google Scholar", `https://scholar.google.com/scholar?q=${q(who)}`],
+    ["LinkedIn", `https://www.linkedin.com/search/results/people/?keywords=${q(who)}`],
+    ["X", `https://x.com/search?q=${q(i.title)}&f=user`],
+  ].filter(([k]) => !given.some(([g]) => g === k));
+  return `<article class="card" data-id="${esc(i.id)}">
+    <div class="c-top">${ccBadge(i.country)}
+      <div class="c-main"><h3 class="c-title">${esc(i.title)}</h3><div class="c-org">${esc(i.org)}${i.country ? " · " + esc(i.country) : ""}</div></div>
+      ${i.origin === "x" ? `<span class="status applied">Found on X</span>` : ""}</div>
+    ${i.snippet ? `<p class="snip">${esc(i.snippet)}</p>` : ""}
+    ${tagList(i.areas)}
+    <div class="actions">
+      ${given.map(([k, u]) => `<a class="btn primary" href="${esc(u)}" target="_blank" rel="noopener">${esc(k)}</a>`).join("")}
+      ${searches.map(([k, u]) => `<a class="btn ghost" href="${esc(u)}" target="_blank" rel="noopener" title="No profile saved yet, opens a search">Find on ${esc(k)}</a>`).join("")}
+      ${saveBtn(i.id)}</div></article>`;
+}
+const RENDER = {position:cardPosition, scholarship:cardScholarship, lab:cardLab, prof:cardProf};
+
+function emptyState(){
+  const anyFilter = state.q || Object.values(state.sel).some(s => s.size) || Object.values(state.win).some(Boolean);
+  if (anyFilter) return `<div class="empty"><h3>No results match these filters</h3><p>Remove a filter or try a broader keyword.</p><p><button class="btn" type="button" data-act="clear">Clear all filters</button></p></div>`;
+  const msg = {
+    positions: `<h3>No open positions yet</h3><p>The crawler runs every 4 hours. To run it now, open your GitHub repo, go to <b>Actions → Update PhD data → Run workflow</b>.</p><p>Rows you add to the <code>Positions</code> sheet in <code>tracker.xlsx</code> also appear here.</p>`,
+    archive: `<h3>The archive is empty</h3><p>Listings move here when their deadline passes or they stop appearing on the source. For 2024–2025 history, run the workflow with the <b>Wayback backfill</b> option.</p>`,
+    saved: `<h3>Nothing saved yet</h3><p>Use <b>Save</b> on any card to keep it here. Saved items are stored in this browser only.</p>`,
+    profs: `<h3>No professors yet</h3><p>Add rows to the <code>Professors</code> sheet in <code>tracker.xlsx</code>.</p>`,
+    labs: `<h3>No labs yet</h3><p>Add rows to the <code>Labs</code> sheet in <code>tracker.xlsx</code>.</p>`,
+    scholarships: `<h3>No scholarships yet</h3><p>Add rows to the <code>Scholarships</code> sheet in <code>tracker.xlsx</code>.</p>`,
+  }[state.tab];
+  return `<div class="empty">${msg}</div>`;
+}
+
+function renderList(){
+  const tab = TABS[state.tab];
+  const sortKey = tab.sorts.includes(state.sort) ? state.sort : tab.sorts[0];
+  document.getElementById("sort").innerHTML = tab.sorts.map(s => `<option value="${s}" ${s === sortKey ? "selected" : ""}>Sort: ${SORTS[s].label}</option>`).join("");
+  const items = filtered().sort(SORTS[sortKey].fn);
+  const pages = Math.max(1, Math.ceil(items.length / PAGE_SIZE));
+  state.page = Math.min(state.page, pages);
+  const slice = items.slice((state.page - 1) * PAGE_SIZE, state.page * PAGE_SIZE);
+  document.getElementById("count").innerHTML = `<b>${items.length}</b> ${items.length === 1 ? "result" : "results"} in ${esc(tab.label)}`;
+  document.getElementById("list").innerHTML = slice.length ? slice.map(i => RENDER[i.kind](i)).join("") : emptyState();
+  const pg = document.getElementById("pager");
+  if (pages <= 1){ pg.innerHTML = ""; return; }
+  const nums = [...new Set([1, state.page - 1, state.page, state.page + 1, pages])].filter(n => n >= 1 && n <= pages).sort((a, b) => a - b);
+  let html = `<button type="button" data-page="${state.page - 1}" ${state.page === 1 ? "disabled" : ""}>Previous</button>`, prev = 0;
+  for (const n of nums){ if (n - prev > 1) html += `<button type="button" disabled>…</button>`; html += `<button type="button" data-page="${n}" ${n === state.page ? 'aria-current="page"' : ""}>${n}</button>`; prev = n; }
+  html += `<button type="button" data-page="${state.page + 1}" ${state.page === pages ? "disabled" : ""}>Next</button>`;
+  pg.innerHTML = html;
+}
+
+function render({filters = true} = {}){
+  renderTabs(); if (filters) renderFilters(); renderPills(); renderList(); renderRegionSelect();
+}
+
+/* ───────────── events ───────────── */
+function setTab(t){
+  if (!TABS[t]) t = "positions";
+  state.tab = t; state.page = 1; state.sort = null;
+  for (const k of Object.keys(state.sel)) if (!TABS[t].facets.includes(k)) delete state.sel[k];
+  if (location.hash.slice(1) !== t) history.replaceState(null, "", "#" + t);
+  render();
+}
+function closeFilters(){ document.getElementById("filters").classList.remove("open"); document.querySelector(".scrim")?.remove(); }
+
+document.getElementById("tabs").addEventListener("click", e => { const b = e.target.closest("[data-tab]"); if (b) setTab(b.dataset.tab); });
+document.getElementById("searchbar").addEventListener("submit", e => {
+  e.preventDefault();
+  state.q = document.getElementById("q").value.trim();
+  const r = document.getElementById("region").value;
+  if (TABS[state.tab].facets.includes("region")) { if (r) state.sel.region = new Set([r]); else delete state.sel.region; }
+  state.page = 1; render();
+  document.getElementById("count").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"});
+});
+document.getElementById("sort").addEventListener("change", e => { state.sort = e.target.value; state.page = 1; renderList(); });
+document.getElementById("fbtn").addEventListener("click", () => {
+  document.getElementById("filters").classList.add("open");
+  const s = document.createElement("div"); s.className = "scrim"; s.addEventListener("click", closeFilters); document.body.appendChild(s);
+});
+document.getElementById("filters").addEventListener("change", e => {
+  const t = e.target;
+  if (t.dataset.facet){ const k = t.dataset.facet; (state.sel[k] ||= new Set()); t.checked ? state.sel[k].add(t.value) : state.sel[k].delete(t.value); if (!state.sel[k].size) delete state.sel[k]; }
+  if (t.dataset.win) state.win[t.dataset.win] = t.value;
+  state.page = 1; render();
+});
+document.addEventListener("click", e => {
+  const t = e.target.closest("button"); if (!t) return;
+  if (t.dataset.act === "clear"){ state.sel = {}; state.win = {}; state.q = ""; document.getElementById("q").value = ""; state.page = 1; render(); }
+  else if (t.dataset.act === "close") closeFilters();
+  else if (t.dataset.more){ state.showAll[t.dataset.more] = !state.showAll[t.dataset.more]; renderFilters(); }
+  else if (t.dataset.unfacet){ state.sel[t.dataset.unfacet]?.delete(t.dataset.v); if (!state.sel[t.dataset.unfacet]?.size) delete state.sel[t.dataset.unfacet]; state.page = 1; render(); }
+  else if (t.dataset.unwin){ state.win[t.dataset.unwin] = ""; render(); }
+  else if (t.dataset.unq){ state.q = ""; document.getElementById("q").value = ""; render(); }
+  else if (t.dataset.page){ state.page = +t.dataset.page; renderList(); document.getElementById("count").scrollIntoView({block:"start"}); }
+  else if (t.dataset.save){
+    const id = t.dataset.save; state.saved.has(id) ? state.saved.delete(id) : state.saved.add(id);
+    store.set("phdboard_saved", [...state.saved]);
+    if (state.tab === "saved") render(); else { t.classList.toggle("saved", state.saved.has(id)); t.textContent = state.saved.has(id) ? "Saved" : "Save"; renderTabs(); }
+  }
+  else if (t.dataset.expand){ const c = t.closest(".card"); c.classList.toggle("expanded"); t.textContent = c.classList.contains("expanded") ? "Less" : "More details"; }
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeFilters(); });
+window.addEventListener("hashchange", () => setTab(location.hash.slice(1)));
+
+/* ───────────── boot ───────────── */
+(async function boot(){
+  const [crawled, excelPos, sch, labs, profs, handles, meta] = await Promise.all([
+    getJSON("data/positions.json", []), getJSON("data/excel_positions.json", []), getJSON("data/scholarships.json", []),
+    getJSON("data/labs.json", []), getJSON("data/professors.json", []), getJSON("data/social_handles.json", []), getJSON("data/meta.json", null)]);
+  DB.positions = [...excelPos.map(normPositionExcel), ...crawled.map(normPositionCrawler)];
+  DB.scholarships = sch.map(normScholarship);
+  DB.labs = labs.map(normLab);
+  DB.profs = [...profs.map(normProf), ...handles.map(normHandle)];
+  DB.meta = meta;
+  renderStats(); renderHealth();
+  setTab(location.hash.slice(1) || "positions");
+})();
+</script>
+</body>
+</html>
