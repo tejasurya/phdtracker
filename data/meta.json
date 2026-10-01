@@ -1,5 +1,5 @@
 {
- "last_run": "2026-10-01T05:51:37+00:00",
+ "last_run": "2026-10-01T15:26:50+00:00",
  "sources": [
   {
    "name": "FindAPhD",
@@ -11,7 +11,7 @@
     "HTTPError: 403 Client Error: Forbidden for url: https://www.findaphd.com/phds/?Keywords=SLAM",
     "HTTPError: 403 Client Error: Forbidden for url: https://www.findaphd.com/phds/?Keywords=photogrammetry"
    ],
-   "seconds": 33.2
+   "seconds": 33.1
   },
   {
    "name": "jobs.ac.uk",
@@ -19,7 +19,7 @@
    "found": 0,
    "new": 0,
    "errors": [],
-   "seconds": 34.3
+   "seconds": 34.0
   },
   {
    "name": "EURAXESS",
@@ -43,7 +43,7 @@
     "HTTPError: 403 Client Error: Forbidden for url: https://academicpositions.com/find-jobs?search=SLAM%20phd",
     "HTTPError: 403 Client Error: Forbidden for url: https://academicpositions.com/find-jobs?search=photogrammetry%20phd"
    ],
-   "seconds": 33.3
+   "seconds": 33.2
   },
   {
    "name": "Nature Careers",
@@ -53,7 +53,7 @@
    "errors": [
     "PermissionError: disallowed by robots.txt"
    ],
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "name": "ScholarshipDb",
@@ -71,7 +71,7 @@
    "found": 0,
    "new": 0,
    "errors": [],
-   "seconds": 36.1
+   "seconds": 36.4
   },
   {
    "name": "X (official API)",
