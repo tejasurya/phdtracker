@@ -1,5 +1,5 @@
 {
- "last_run": "2026-10-04T14:04:39+00:00",
+ "last_run": "2026-10-04T19:37:43+00:00",
  "sources": [
   {
    "name": "FindAPhD",
@@ -31,7 +31,7 @@
     "HTTPError: 403 Client Error: Forbidden for url: https://euraxess.ec.europa.eu/jobs/search?keywords=SLAM%20phd",
     "HTTPError: 403 Client Error: Forbidden for url: https://euraxess.ec.europa.eu/jobs/search?keywords=photogrammetry%20phd"
    ],
-   "seconds": 33.4
+   "seconds": 33.3
   },
   {
    "name": "Academic Positions",
@@ -43,7 +43,7 @@
     "HTTPError: 403 Client Error: Forbidden for url: https://academicpositions.com/find-jobs?search=SLAM%20phd",
     "HTTPError: 403 Client Error: Forbidden for url: https://academicpositions.com/find-jobs?search=photogrammetry%20phd"
    ],
-   "seconds": 33.4
+   "seconds": 33.3
   },
   {
    "name": "Nature Careers",
