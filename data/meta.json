@@ -1,5 +1,5 @@
 {
- "last_run": "2026-10-06T11:15:49+00:00",
+ "last_run": "2026-10-06T18:21:12+00:00",
  "sources": [
   {
    "name": "FindAPhD",
@@ -19,7 +19,7 @@
    "found": 0,
    "new": 0,
    "errors": [],
-   "seconds": 34.9
+   "seconds": 35.1
   },
   {
    "name": "EURAXESS",
@@ -31,7 +31,7 @@
     "HTTPError: 403 Client Error: Forbidden for url: https://euraxess.ec.europa.eu/jobs/search?keywords=SLAM%20phd",
     "HTTPError: 403 Client Error: Forbidden for url: https://euraxess.ec.europa.eu/jobs/search?keywords=photogrammetry%20phd"
    ],
-   "seconds": 33.5
+   "seconds": 33.6
   },
   {
    "name": "Academic Positions",
@@ -63,7 +63,7 @@
    "errors": [
     "PermissionError: disallowed by robots.txt"
    ],
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "University Affairs (Canada)",
@@ -71,7 +71,7 @@
    "found": 0,
    "new": 0,
    "errors": [],
-   "seconds": 36.1
+   "seconds": 43.5
   },
   {
    "name": "X (official API)",
