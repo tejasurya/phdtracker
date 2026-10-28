@@ -1,5 +1,26 @@
 [
  {
+  "id": "8f1f5483b584",
+  "title": "PhD Studentship: Advancing Multi-Mission Satellite Radar for Monitoring Permafrost Degradation and Erosion in a Changing Arctic",
+  "url": "https://www.jobs.ac.uk/job/DTL075/phd-studentship-advancing-multi-mission-satellite-radar-for-monitoring-permafrost-degradation-and-erosion-in-a-changing-arctic",
+  "source": "jobs.ac.uk",
+  "snippet": "PhD Studentship: Advancing Multi-Mission Satellite Radar for Monitoring Permafrost Degradation and Erosion in a Changing Arctic Earth and Environmental Sciences University of Exeter Location: Exeter Salary: £21,805 The studentship will provide funding of fees and a stipend of £21,805 per annum for 2026/7 Date Placed: 28 Oct",
+  "institution": "Environmental Sciences University",
+  "country": "",
+  "region": "",
+  "areas": [
+   "Remote Sensing"
+  ],
+  "type": "PhD Scholarship",
+  "relevance": 5,
+  "deadline": null,
+  "deadline_text": "",
+  "first_seen": "2026-10-28T15:05:14+00:00",
+  "last_seen": "2026-10-28T15:05:14+00:00",
+  "status": "open",
+  "origin": "crawler"
+ },
+ {
   "id": "46fbf07b9730",
   "title": "PhD Studentship: From Spectra to Marine Litter: Multispectral Imaging and AI for Aerial Detection and Monitoring",
   "url": "https://www.jobs.ac.uk/job/DTJ323/phd-studentship-from-spectra-to-marine-litter-multispectral-imaging-and-ai-for-aerial-detection-and-monitoring",
@@ -16,7 +37,7 @@
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-10-22T13:47:04+00:00",
-  "last_seen": "2026-10-28T05:40:39+00:00",
+  "last_seen": "2026-10-28T15:05:14+00:00",
   "status": "open",
   "origin": "crawler"
  }
