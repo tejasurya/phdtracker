@@ -1,5 +1,5 @@
 {
- "last_run": "2026-10-30T15:02:06+00:00",
+ "last_run": "2026-10-30T20:47:51+00:00",
  "sources": [
   {
    "name": "FindAPhD",
@@ -9,7 +9,7 @@
    "errors": [
     "PermissionError: disallowed by robots.txt"
    ],
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "name": "jobs.ac.uk",
@@ -17,7 +17,7 @@
    "found": 2,
    "new": 0,
    "errors": [],
-   "seconds": 35.5
+   "seconds": 34.6
   },
   {
    "name": "EURAXESS",
@@ -41,7 +41,7 @@
     "HTTPError: 403 Client Error: Forbidden for url: https://academicpositions.com/find-jobs?search=SLAM%20phd",
     "HTTPError: 403 Client Error: Forbidden for url: https://academicpositions.com/find-jobs?search=photogrammetry%20phd"
    ],
-   "seconds": 33.3
+   "seconds": 33.6
   },
   {
    "name": "Nature Careers",
@@ -63,7 +63,7 @@
     "HTTPError: 403 Client Error: Forbidden for url: https://scholarshipdb.net/scholarships?q=SLAM",
     "HTTPError: 403 Client Error: Forbidden for url: https://scholarshipdb.net/scholarships?q=photogrammetry"
    ],
-   "seconds": 33.3
+   "seconds": 33.2
   },
   {
    "name": "University Affairs (Canada)",
@@ -71,7 +71,7 @@
    "found": 0,
    "new": 0,
    "errors": [],
-   "seconds": 38.8
+   "seconds": 39.2
   },
   {
    "name": "X (official API)",
