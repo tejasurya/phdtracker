@@ -1,5 +1,5 @@
 {
- "last_run": "2026-11-11T06:15:00+00:00",
+ "last_run": "2026-11-11T16:09:40+00:00",
  "sources": [
   {
    "name": "FindAPhD",
@@ -41,7 +41,7 @@
     "HTTPError: 403 Client Error: Forbidden for url: https://academicpositions.com/find-jobs?search=SLAM%20phd",
     "HTTPError: 403 Client Error: Forbidden for url: https://academicpositions.com/find-jobs?search=photogrammetry%20phd"
    ],
-   "seconds": 33.3
+   "seconds": 33.2
   },
   {
    "name": "Nature Careers",
@@ -71,7 +71,7 @@
    "found": 0,
    "new": 0,
    "errors": [],
-   "seconds": 39.5
+   "seconds": 36.1
   },
   {
    "name": "X (official API)",
