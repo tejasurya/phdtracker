@@ -1,5 +1,27 @@
 [
  {
+  "id": "3a9d416a536a",
+  "title": "PhD Studentship - Exploiting InSAR Loop Closure for Monitoring Soil Moisture and Vegetation Dynamics",
+  "url": "https://www.jobs.ac.uk/job/DTQ484/phd-studentship-exploiting-insar-loop-closure-for-monitoring-soil-moisture-and-vegetation-dynamics",
+  "source": "jobs.ac.uk",
+  "snippet": "PhD Studentship - Exploiting InSAR Loop Closure for Monitoring Soil Moisture and Vegetation Dynamics Earth and Environmental Science University of Exeter Location: Exeter Salary: Not Specified Date Placed: 13 Nov",
+  "institution": "Environmental Science University",
+  "country": "",
+  "region": "",
+  "areas": [
+   "SLAM",
+   "Remote Sensing"
+  ],
+  "type": "PhD Scholarship",
+  "relevance": 10,
+  "deadline": null,
+  "deadline_text": "",
+  "first_seen": "2026-11-13T19:40:27+00:00",
+  "last_seen": "2026-11-13T19:40:27+00:00",
+  "status": "open",
+  "origin": "crawler"
+ },
+ {
   "id": "716453be9d26",
   "title": "PhD Studentship: Autonomous satellite-linked acoustic monitoring of biodiversity and threats in the Celtic Sea",
   "url": "https://www.jobs.ac.uk/job/DTQ201/phd-studentship-autonomous-satellite-linked-acoustic-monitoring-of-biodiversity-and-threats-in-the-celtic-sea",
@@ -17,7 +39,7 @@
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-11-12T16:47:33+00:00",
-  "last_seen": "2026-11-13T12:11:48+00:00",
+  "last_seen": "2026-11-13T19:40:27+00:00",
   "status": "open",
   "origin": "crawler"
  },
@@ -38,7 +60,7 @@
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-10-28T15:05:14+00:00",
-  "last_seen": "2026-11-13T12:11:48+00:00",
+  "last_seen": "2026-11-13T19:40:27+00:00",
   "status": "open",
   "origin": "crawler"
  },
@@ -59,7 +81,7 @@
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-10-22T13:47:04+00:00",
-  "last_seen": "2026-11-13T12:11:48+00:00",
+  "last_seen": "2026-11-13T19:40:27+00:00",
   "status": "open",
   "origin": "crawler"
  }
