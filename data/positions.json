@@ -9,15 +9,15 @@
   "country": "",
   "region": "",
   "areas": [
-   "SLAM",
-   "Remote Sensing"
+   "Remote Sensing",
+   "SLAM"
   ],
   "type": "PhD Scholarship",
   "relevance": 10,
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-11-13T19:40:27+00:00",
-  "last_seen": "2026-11-13T19:40:27+00:00",
+  "last_seen": "2026-11-14T00:53:16+00:00",
   "status": "open",
   "origin": "crawler"
  },
@@ -39,7 +39,7 @@
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-11-12T16:47:33+00:00",
-  "last_seen": "2026-11-13T19:40:27+00:00",
+  "last_seen": "2026-11-14T00:53:16+00:00",
   "status": "open",
   "origin": "crawler"
  },
@@ -60,7 +60,7 @@
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-10-28T15:05:14+00:00",
-  "last_seen": "2026-11-13T19:40:27+00:00",
+  "last_seen": "2026-11-14T00:53:16+00:00",
   "status": "open",
   "origin": "crawler"
  },
@@ -81,7 +81,7 @@
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-10-22T13:47:04+00:00",
-  "last_seen": "2026-11-13T19:40:27+00:00",
+  "last_seen": "2026-11-14T00:53:16+00:00",
   "status": "open",
   "origin": "crawler"
  }
