@@ -1,5 +1,26 @@
 [
  {
+  "id": "5f6c0fb612b4",
+  "title": "PhD Studentship: CENTA 2027-UKCEH01 HInterMap drone-based mapping to improve monitoring and understanding of headwater and intermittent streams",
+  "url": "https://www.jobs.ac.uk/job/DTR130/phd-studentship-centa-2027-ukceh01-hintermap-drone-based-mapping-to-improve-monitoring-and-understanding-of-headwater-and-intermittent-streams",
+  "source": "jobs.ac.uk",
+  "snippet": "PhD Studentship: CENTA 2027-UKCEH01 HInterMap drone-based mapping to improve monitoring and understanding of headwater and intermittent streams School of Geography, Earth and Environmental Sciences University of Birmingham Location: Birmingham Salary: Not Specified Date Placed: 16 Nov",
+  "institution": "Environmental Sciences University",
+  "country": "",
+  "region": "",
+  "areas": [
+   "Remote Sensing"
+  ],
+  "type": "PhD Scholarship",
+  "relevance": 5,
+  "deadline": null,
+  "deadline_text": "",
+  "first_seen": "2026-11-16T18:30:52+00:00",
+  "last_seen": "2026-11-16T18:30:52+00:00",
+  "status": "open",
+  "origin": "crawler"
+ },
+ {
   "id": "3a9d416a536a",
   "title": "PhD Studentship - Exploiting InSAR Loop Closure for Monitoring Soil Moisture and Vegetation Dynamics",
   "url": "https://www.jobs.ac.uk/job/DTQ484/phd-studentship-exploiting-insar-loop-closure-for-monitoring-soil-moisture-and-vegetation-dynamics",
@@ -17,7 +38,7 @@
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-11-13T19:40:27+00:00",
-  "last_seen": "2026-11-16T06:26:29+00:00",
+  "last_seen": "2026-11-16T18:30:52+00:00",
   "status": "open",
   "origin": "crawler"
  },
@@ -39,7 +60,7 @@
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-11-12T16:47:33+00:00",
-  "last_seen": "2026-11-16T06:26:29+00:00",
+  "last_seen": "2026-11-16T18:30:52+00:00",
   "status": "open",
   "origin": "crawler"
  },
@@ -60,7 +81,7 @@
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-10-28T15:05:14+00:00",
-  "last_seen": "2026-11-16T06:26:29+00:00",
+  "last_seen": "2026-11-16T18:30:52+00:00",
   "status": "open",
   "origin": "crawler"
  },
@@ -81,7 +102,7 @@
   "deadline": null,
   "deadline_text": "",
   "first_seen": "2026-10-22T13:47:04+00:00",
-  "last_seen": "2026-11-16T06:26:29+00:00",
+  "last_seen": "2026-11-16T18:30:52+00:00",
   "status": "open",
   "origin": "crawler"
  }
