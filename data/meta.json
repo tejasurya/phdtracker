@@ -1,5 +1,5 @@
 {
- "last_run": "2026-11-23T07:35:22+00:00",
+ "last_run": "2026-11-23T20:12:11+00:00",
  "sources": [
   {
    "name": "FindAPhD",
@@ -9,15 +9,19 @@
    "errors": [
     "PermissionError: disallowed by robots.txt"
    ],
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "name": "jobs.ac.uk",
-   "status": "ok",
-   "found": 5,
+   "status": "error",
+   "found": 0,
    "new": 0,
-   "errors": [],
-   "seconds": 34.6
+   "errors": [
+    "HTTPError: 500 Server Error: Internal Server Error for url: https://www.jobs.ac.uk/search/?keywords=LiDAR+phd",
+    "HTTPError: 500 Server Error: Internal Server Error for url: https://www.jobs.ac.uk/search/?keywords=SLAM+phd",
+    "HTTPError: 500 Server Error: Internal Server Error for url: https://www.jobs.ac.uk/search/?keywords=photogrammetry+phd"
+   ],
+   "seconds": 33.2
   },
   {
    "name": "EURAXESS",
@@ -41,7 +45,7 @@
     "HTTPError: 403 Client Error: Forbidden for url: https://academicpositions.com/find-jobs?search=SLAM%20phd",
     "HTTPError: 403 Client Error: Forbidden for url: https://academicpositions.com/find-jobs?search=photogrammetry%20phd"
    ],
-   "seconds": 33.2
+   "seconds": 33.3
   },
   {
    "name": "Nature Careers",
@@ -63,15 +67,17 @@
     "HTTPError: 403 Client Error: Forbidden for url: https://scholarshipdb.net/scholarships?q=SLAM",
     "HTTPError: 403 Client Error: Forbidden for url: https://scholarshipdb.net/scholarships?q=photogrammetry"
    ],
-   "seconds": 33.1
+   "seconds": 33.2
   },
   {
    "name": "University Affairs (Canada)",
-   "status": "ok",
+   "status": "error",
    "found": 0,
    "new": 0,
-   "errors": [],
-   "seconds": 36.3
+   "errors": [
+    "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+   ],
+   "seconds": 47.2
   },
   {
    "name": "X (official API)",
